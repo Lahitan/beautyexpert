@@ -13,6 +13,9 @@ export default {
 				"tertiary-brand": "#001F3F",
 				success: "#ED4B9E",
 			},
+			backgroundImage: {
+				"landing-page": "url('./assets/landing-page.png')"
+			}
 		},
 	},
 	plugins: [],
