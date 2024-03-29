@@ -1,14 +1,15 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
+import Layout from "./pages/Home/Layout";
+import { Outlet } from "react-router-dom";
 
 function App() {
- 
-
-  return (
-    <>
-    <h1 className='text-pink-500'>Hello World</h1>
-    </>
-  )
+	return (
+		<>
+			<Outlet />
+			<Layout />
+		</>
+	);
 }
 
-export default App
+export default App;
