@@ -1,18 +1,16 @@
 import React from "react";
-import Testimonials from "../../testimonials/Testimonials";
+import Hero from "./Hero";
+import ForExpert from "./ForExpert";
 
 const Main = () => {
 	return (
 		<div className="bg-primary-brand">
 			<div className="w-[90%] mx-auto">
-				<p>This is Tamara's work</p>
-				
-{/* testimonials  */}
-				<Testimonials />
+				<Hero />
+				<ForExpert />
 			</div>
 		</div>
 	);
 };
 
 export default Main;
-

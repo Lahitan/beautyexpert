@@ -9,6 +9,7 @@ const Layout = () => {
 			<div className="">
 				<Header />
 				<Main />
+
 				<Footer />
 			</div>
 		</div>

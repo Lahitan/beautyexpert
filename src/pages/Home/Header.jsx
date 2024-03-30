@@ -1,18 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/logo.png";
 import { NavLink } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";
+import { FaBars } from "react-icons/fa6";
+import { GrClose } from "react-icons/gr";
 
 const Header = () => {
+	const [menu, setMenu] = useState(false);
+	const handleMenu = () => {
+		setMenu(!menu);
+	};
 	return (
 		<div>
 			<nav className="flex items-center  text-xl font-semibold bg-white ">
 				<div className="w-[90%] mx-auto flex items-center justify-between">
 					<div className=" flex items-center gap-6 ">
+						{!menu ? (
+							<FaBars className=" text-2xl lg:hidden" onClick={handleMenu} />
+						) : (
+							<GrClose className=" text-2xl lg:hidden" onClick={handleMenu} />
+						)}
+
 						<div>
 							<img src={logo} alt="" />
 						</div>
-						<ul className="flex gap-5 ">
+						<ul
+							className={`lg:flex gap-5 absolute lg:relative top-20 lg:top-0 bg-white left-0 right-0 ps-10 lg:ps-0 py-4 lg:py-0 ${
+								!menu && "hidden"
+							}`}
+						>
 							<li>
 								<NavLink
 									to="/"
