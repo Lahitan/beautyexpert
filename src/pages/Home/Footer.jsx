@@ -45,7 +45,7 @@ const Footer = () => {
 							<NavLink to="/">Contact us</NavLink>
 						</div>
 {/* Follow us section */}
-						<div className="flex  ">
+						<div className="flex items-center justify-between ">
 							<p className=" text-base font-bold mr-5" >
 								Follow us: 
 							</p>
