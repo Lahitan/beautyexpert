@@ -14,7 +14,7 @@ const Testimonials = () => {
             <h6 className=' font-openSans font-normal text-2xl text-center' >What our customers say... </h6>
         </div> 
         {/* testimonial card container */}
-        <div>
+        <div className='flex justify-between'>
             {/* card 1 */}
             <div className=' review-everything-else w-80 mt-14 text-justify font-openSans gap-2 font-normal '  >
                 <p>“Beauty Xpats website na the real deal oh! I no fit believe how easy I find Oyinda wey dey braid hair pass other hairdressers for my area. Plus, her prices not too high.”
@@ -35,7 +35,7 @@ const Testimonials = () => {
                 </div>
             </div> 
                    {/* card 2  */}
-            <div className=' review-everything-else w-80 my-6 text-justify font-openSans gap-2 font-normal '  >
+            <div className=' review-everything-else w-80 my-44 text-justify font-openSans gap-2 font-normal '  >
                 <p>“The platform is user-friendly and allows me to find qualified professionals in my area with ease. I recently booked a haircut and style with a fantastic stylist who listened to my needs and delivered amazing results. I will definitely be using Beauty Xpats again and recommending it to my friends.”
                 </p>
                 <div className=' pic-everthing-else bg-secondary-brand flex gap-5 p-3 mr-1 rounded-xl items-center justify-between' >
@@ -54,7 +54,7 @@ const Testimonials = () => {
                 </div>
             </div>   
                  {/*card 3  */}
-            <div className=' review-everything-else w-80 my-6 text-justify font-openSans gap-2 font-normal '  >
+            <div className=' review-everything-else w-80 mt-96 mb-12 text-justify font-openSans gap-2 font-normal '  >
                 <p>“I was initially hesitant about using an online platform to find a new makeup artist, but Beauty Xpats put my worries at ease. I booked with a highly-rated makeup artist for my wedding, and she was incredible! I highly recommend Beauty Xpats for anyone seeking trustworthy and talented beauty professionals.”
                 </p>
                 <div className=' pic-everthing-else bg-secondary-brand flex gap-5 p-3 mr-1 rounded-xl items-center justify-between' >

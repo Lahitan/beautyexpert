@@ -46,22 +46,22 @@ const Footer = () => {
 						</div>
 {/* Follow us section */}
 						<div className="flex items-center justify-between ">
-							<p className=" text-base font-bold mr-5" >
+							<p className=" text-base font-bold mr-5 " >
 								Follow us: 
 							</p>
 {/*social media icons  */}
 							<div className="flex justify-between">
 								<div>
-									<img src={fb} alt="facebook link" className=" mx-2 "/>
+									<img src={fb} alt="facebook link" className=" mx-6 "/>
 								</div>
 								<div>
-									<img src={ig} alt="instagram link" className=" mx-2 "/>
+									<img src={ig} alt="instagram link" className=" mx-6 "/>
 								</div>
 								<div>
-									<img src={twitter} alt="twitter link" className="mx-2 "/>
+									<img src={twitter} alt="twitter link" className="mx-6 "/>
 								</div>
 								<div>
-									<img src={linkedin} alt="linkedin link" className="mx-2 "/>
+									<img src={linkedin} alt="linkedin link" className="mx-6 "/>
 								</div>
 							</div>	
 						</div>
