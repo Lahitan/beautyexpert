@@ -1,6 +1,7 @@
 import React from "react";
 import Hero from "./Hero";
 import ForExpert from "./ForExpert";
+import Testimonials from "../../testimonials/Testimonials";
 
 const Main = () => {
 	return (
@@ -8,6 +9,8 @@ const Main = () => {
 			<div className="w-[90%] mx-auto">
 				<Hero />
 				<ForExpert />
+				{/* testimonials  */}
+				<Testimonials />
 			</div>
 		</div>
 	);

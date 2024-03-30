@@ -8,7 +8,7 @@ import esther from '../assets/esther.png'
 const Testimonials = () => {
   return (
     <>
-    <div className=' bg-primary-brand ' >
+    <div className=' bg-primary-brand mt-10 ' >
         <div>
             <h4 className=" font-montserrat font-bold text-3xl text-center ">Testimonials</h4>
             <h6 className=' font-openSans font-normal text-2xl text-center' >What our customers say... </h6>
