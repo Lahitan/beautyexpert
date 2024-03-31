@@ -14,15 +14,19 @@ const Header = () => {
 		<div>
 			<nav className="flex items-center  text-xl font-semibold bg-white ">
 				<div className="w-[90%] mx-auto flex items-center justify-between">
-					<div className=" flex items-center gap-6 ">
+
+				{/* added padding to the div directly under this div*/}
+
+					<div className=" flex items-center gap-6 p-3">
 						{!menu ? (
 							<FaBars className=" text-2xl lg:hidden" onClick={handleMenu} />
 						) : (
 							<GrClose className=" text-2xl lg:hidden" onClick={handleMenu} />
 						)}
 
+						{/* changed the width of the logo for responsivness*/}
 						<div>
-							<img src={logo} alt="" />
+							<img src={logo} alt="" className=" sm:w-11 w-8" />
 						</div>
 						<ul
 							className={`lg:flex gap-5 absolute lg:relative top-20 lg:top-0 bg-white left-0 right-0 ps-10 lg:ps-0 py-4 lg:py-0 ${
@@ -75,17 +79,18 @@ const Header = () => {
 							</li>
 						</ul>
 					</div>
+					{/* adjusted the padding in the button for responsiveness*/}
 					<div className="">
 						<NavLink
 							className={
-								" border border-tertiary-brand me-3 font-semibold rounded-full py-2 px-5"
+								" border border-tertiary-brand  me-1 lg:me-3 font-semibold rounded-full py-1 px-3 lg:py-2 lg:px-5"
 							}
 						>
 							Log in
 						</NavLink>
 						<NavLink
 							className={
-								" bg-tertiary-brand text-white font-semibold me-3 rounded-full py-2 px-5"
+								" bg-tertiary-brand text-white font-medium lg:font-semibold me-1 lg:me-3 rounded-full  py-1 px-3 lg:py-2 lg:px-5"
 							}
 						>
 							Sign up
