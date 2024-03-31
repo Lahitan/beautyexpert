@@ -1,6 +1,7 @@
 import React from "react";
 import Hero from "./Hero";
 import ForExpert from "./ForExpert";
+import Testimonials from "../../testimonials/Testimonials";
 import SmallBusiness from "./SmallBusiness";
 
 const Main = () => {
@@ -10,6 +11,8 @@ const Main = () => {
 				<Hero />
 				<ForExpert />
 				<SmallBusiness />
+				{/* testimonials  */}
+				<Testimonials />
 			</div>
 		</div>
 	);

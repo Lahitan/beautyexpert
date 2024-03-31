@@ -14,7 +14,8 @@ export default {
 				success: "#ED4B9E",
 			},
 			backgroundImage: {
-				"landing-page": "url('./assets/landing-page.png')"
+				"landing-page": "url('./assets/landing-page.png')",
+				"mb-landing-page": "url('./assets/mb-landing-page.png')",
 			}
 		},
 	},
