@@ -18,7 +18,7 @@ const Footer = () => {
 	return (
 		// footer section
 		<div className=" flex  text-white  md:text-left font-openSans">
-			<div className=" w-[90%] px-20 py-10 rounded-xl bg-secondary-brand mx-auto my-10   ">
+			<div className=" w-[90%] px-5 md:px-20 py-10 rounded-xl bg-secondary-brand mx-auto my-10   ">
 				<div className="grid-1 gap-8 grid  lg:grid-cols-5">
 					{/* about us section */}
 					<div className="lg:col-span-2">
