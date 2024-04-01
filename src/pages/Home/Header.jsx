@@ -14,8 +14,7 @@ const Header = () => {
 		<div>
 			<nav className="flex items-center  text-xl font-semibold bg-white ">
 				<div className="w-[90%] mx-auto flex items-center justify-between">
-
-				{/* added padding to the div directly under this div*/}
+					{/* added padding to the div directly under this div*/}
 
 					<div className=" flex items-center gap-6 p-3">
 						{!menu ? (
@@ -29,7 +28,7 @@ const Header = () => {
 							<img src={logo} alt="" className=" sm:w-11 w-8" />
 						</div>
 						<ul
-							className={`lg:flex gap-5 absolute lg:relative top-20 lg:top-0 bg-white left-0 right-0 ps-10 lg:ps-0 py-4 lg:py-0 ${
+							className={`lg:flex gap-5 absolute lg:relative top-16 lg:top-0 bg-white left-0 right-0 ps-10 lg:ps-0 py-4 lg:py-0 ${
 								!menu && "hidden"
 							}`}
 						>

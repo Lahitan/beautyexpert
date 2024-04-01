@@ -18,7 +18,7 @@ const Footer = () => {
 	return (
 		// footer section
 		<div className=" flex  text-white  md:text-left font-openSans">
-			<div className=" w-[90%] px-20 py-10 rounded-xl bg-secondary-brand mx-auto my-10   ">
+			<div className=" w-[90%] px-5 md:px-20 py-10 rounded-xl bg-secondary-brand mx-auto my-10   ">
 				<div className="grid-1 gap-8 grid  lg:grid-cols-5">
 					{/* about us section */}
 					<div className="lg:col-span-2">
@@ -36,11 +36,11 @@ const Footer = () => {
 						</NavLink>
 					</div>
 					{/* navigation section */}
-					<div className=" sm:border-b-2">
-						<div className="sm:flex justify-between items-center">
+					<div className=" border-b-2 md:border-none">
+						<div className="flex justify-between items-center">
 							<h4 className="text-xl font-bold mb-4  ">NAVIGATION</h4>
 							<IoIosArrowDown
-								className="text-2xl"
+								className="text-2xl md:hidden"
 								id="nav"
 								onClick={() => {
 									setShowLinks({
@@ -52,7 +52,7 @@ const Footer = () => {
 							/>
 						</div>
 
-						<div className={`links ${!nav && "sm:hidden "} `}>
+						<div className={`links ${!nav && "hidden md:block "} `}>
 							<NavLink to="/" className=" my-4 ">
 								Home
 							</NavLink>
@@ -67,11 +67,11 @@ const Footer = () => {
 						</div>
 					</div>
 					{/* legal section		 */}
-					<div className="sm:border-b-2">
-						<div className="sm:flex justify-between items-center ">
+					<div className="border-b-2 md:border-none">
+						<div className="flex justify-between items-center ">
 							<h4 className="text-xl font-bold mb-4 ">LEGAL</h4>
 							<IoIosArrowDown
-								className="text-2xl"
+								className="text-2xl md:hidden"
 								id="legal"
 								onClick={() => {
 									setShowLinks({
@@ -82,18 +82,18 @@ const Footer = () => {
 								}}
 							/>
 						</div>
-						<div className={`links ${!legal && "sm:hidden "} `}>
+						<div className={`links ${!legal && "hidden md:block"} `}>
 							<NavLink to="/">Terms and Conditions</NavLink>
 							<br />
 							<NavLink to="/">Privacy Policy</NavLink>
 						</div>
 					</div>
 					{/* help section */}
-					<div className=" sm:border-b-2">
-						<div className="sm:flex justify-between items-center">
+					<div className=" border-b-2 md:border-none">
+						<div className="flex justify-between items-center">
 							<h4 className="text-xl font-bold mb-4">HELP</h4>
 							<IoIosArrowDown
-								className="text-2xl"
+								className="text-2xl md:hidden"
 								id="help"
 								onClick={() => {
 									setShowLinks({
@@ -104,7 +104,7 @@ const Footer = () => {
 								}}
 							/>
 						</div>
-						<div className={`links ${!help && "sm:hidden "} `}>
+						<div className={`links ${!help && "hidden md:block "} `}>
 							<NavLink to="/">Contact us</NavLink>
 						</div>
 					</div>
