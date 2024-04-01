@@ -8,7 +8,7 @@ import barbershop from "../../assets/barbershop-waiting-1.png";
 const SmallBusiness = () => {
 	return (
 		<div className=" flex py-4 flex-wrap-reverse">
-			<div className="bg-[#CEE8FB] flex-1 p-4 rounded-lg">
+			<div className="md:bg-[#CEE8FB] flex-1 p-4 rounded-lg">
 				<h3 className=" text-3xl font-bold mb-10">
 					Why small businesses use Beauty <br /> Xpats
 				</h3>
