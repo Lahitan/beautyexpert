@@ -49,6 +49,7 @@ const ExpertCreateAccountPage2 = () => {
                         <img src={unchecked} alt="" />
                         <div className='p-2' >
                             <h3 className='font-bold' >STEP 2</h3>
+                            
                             <p>Upload Portfolio</p>
                         </div>
                     </div>
