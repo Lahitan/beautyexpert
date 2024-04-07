@@ -11,6 +11,7 @@ import Login from "./pages/Login/Login.jsx";
 import ForgetPassword from "./pages/Login/ForgetPassword.jsx";
 import ExpertCreateAccount from "./pages/Login/ExpertCreateAccount.jsx";
 import ExpertCreateAccountPage2 from "./pages/Login/ExpertCreateAccountPage2.jsx";
+import ExpertUploadPage from "./pages/Login/ExpertUploadPage.jsx";
 
 const router = createBrowserRouter([
 	{
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
 	{
 		path: "/ExpertCreateAccountPage2",
 		element: <ExpertCreateAccountPage2 />,
+	},
+	{
+		path: "/ExpertUploadPage",
+		element: <ExpertUploadPage />,
 	},
 ]);
 

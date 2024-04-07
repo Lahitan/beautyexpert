@@ -1,12 +1,9 @@
 import React from 'react'
-import { Link } from "react-router-dom"
 import barber from "../../assets/barber-background-image.png"
-// import loading from "../../assets/step-loading-logo.png"
 import line from "../../assets/line-logo.png"
 import brokenLine from "../../assets/broken-line.png"
 import unchecked from "../../assets/unchecked-logo.png"
 import checked from "../../assets/checked-logo.png"
-// import eye from "../../assets/eye-logo.png"
 import wideLine from "../../assets/wide-line.png"
 
 const background = {
@@ -27,10 +24,6 @@ const ExpertCreateAccountPage2 = () => {
                 {/* headings */}
                 <div className='flex flex-col items-center justify-center '>
                     <h1 className=' font-bold' >Create an account as an expert</h1>
-                    <h2 className="h2">
-                        Already have an account?
-                        <Link to={"/login"} className=" "> Log in</Link>
-                    </h2>
                 </div>
             </div>
             <div>
