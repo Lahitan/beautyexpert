@@ -61,7 +61,7 @@ const ExpertUploadPage = () => {
                 </div>
                 {/* end of sign in steps */}
                 {/* form */}
-                <div className=" flex flex-col place-items-center gap-10 w-[70%] h-[466px] my-7  ">
+                <div className=" flex flex-col place-items-center gap-10 w-[100%] h-[466px] my-7  ">
                     <div className=' flex flex-col items-start  ' >
                         {/* featured image upload */}
                         <div >
