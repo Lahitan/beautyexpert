@@ -60,6 +60,7 @@ const Header = () => {
 							</li>
 							<li>
 								<NavLink
+									to={"/services"}
 									className={({ isActive }) =>
 										isActive ? " text-[#3992EE]" : "text-[#B1B1B1]"
 									}

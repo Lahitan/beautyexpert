@@ -9,6 +9,7 @@ import LoginRoot from "./pages/Login/LoginRoot.jsx";
 import CustomerCreateAcount from "./pages/Login/CustomerCreateAcount.jsx";
 import Login from "./pages/Login/Login.jsx";
 import ForgetPassword from "./pages/Login/ForgetPassword.jsx";
+import Services from "./pages/Services.jsx";
 
 const router = createBrowserRouter([
 	{
@@ -22,21 +23,26 @@ const router = createBrowserRouter([
 		element: <About />,
 	},
 	{
+		path: "/services",
+		element: <Services />,
+	},
+	{
 		path: "/loginRoot",
 		element: <LoginRoot />,
 	},
 	{
 		path: "/customerCreateAccount",
 		element: <CustomerCreateAcount />,
+		children: [
+			{
+				path: "forgetPassword",
+				element: <ForgetPassword />,
+			},
+		],
 	},
 	{
 		path: "/login",
 		element: <Login />,
-		children: [],
-	},
-	{
-		path: "forgetPassword",
-		element: <ForgetPassword />,
 	},
 ]);
 
