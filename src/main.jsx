@@ -9,6 +9,9 @@ import LoginRoot from "./pages/Login/LoginRoot.jsx";
 import CustomerCreateAcount from "./pages/Login/CustomerCreateAcount.jsx";
 import Login from "./pages/Login/Login.jsx";
 import ForgetPassword from "./pages/Login/ForgetPassword.jsx";
+import ExpertCreateAccount from "./pages/Login/ExpertCreateAccount.jsx";
+import ExpertCreateAccountPage2 from "./pages/Login/ExpertCreateAccountPage2.jsx";
+import ExpertUploadPage from "./pages/Login/ExpertUploadPage.jsx";
 import Services from "./pages/Services.jsx";
 
 const router = createBrowserRouter([
@@ -43,6 +46,30 @@ const router = createBrowserRouter([
 	{
 		path: "/login",
 		element: <Login />,
+	},
+	{
+		path: "/ExpertCreateAccount",
+		element: <ExpertCreateAccount />,
+	},
+	{
+		path: "/ExpertCreateAccountPage2",
+		element: <ExpertCreateAccountPage2 />,
+	},
+	{
+		path: "/ExpertUploadPage",
+		element: <ExpertUploadPage />,
+	},
+	{
+		path: "/ExpertCreateAccount",
+		element: <ExpertCreateAccount />,
+	},
+	{
+		path: "/ExpertCreateAccountPage2",
+		element: <ExpertCreateAccountPage2 />,
+	},
+	{
+		path: "/ExpertUploadPage",
+		element: <ExpertUploadPage />,
 	},
 ]);
 

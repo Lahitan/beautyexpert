@@ -11,6 +11,7 @@ export default {
 				"primary-brand": "#F3D6E0",
 				"secondary-brand": "#12522D",
 				"tertiary-brand": "#001F3F",
+				"divider": "#12522D",
 				success: "#ED4B9E",
 			},
 			backgroundImage: {
