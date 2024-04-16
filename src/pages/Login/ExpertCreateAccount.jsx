@@ -13,7 +13,7 @@ const background = {
 	backgroundSize: "cover",
 	backgroundPosition: "left",
 	width: "100%",
-	height: "100vh",
+	height: "100%",
 };
 
 const ExpertCreateAccount = () => {
