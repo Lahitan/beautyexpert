@@ -43,7 +43,6 @@ const ExpertUploadPage = () => {
                         <img src={unchecked} alt="" />
                         <div className='p-2' >
                             <h3 className='font-bold' >STEP 2</h3>
-
                             <p>Upload Portfolio</p>
                         </div>
                     </div>
@@ -71,7 +70,7 @@ const ExpertUploadPage = () => {
                                 <p className='text-md my-2 ' >Upload a specific image to be the main thumbnail representing your portfolio</p>
                             </div>
 
-                            <section className="border border-dashed border-black mx-28 p-2 ">
+                            <section className="border border-dashed border-black w-[60%] m-auto p-2 ">
                                 <div className=' flex justify-center align-middle m-auto '>
                                     <img src={upload} alt="" />
                                 </div>
@@ -91,7 +90,7 @@ const ExpertUploadPage = () => {
                                 <span className='label-text font-bold'>File upload (Images)</span>
                                 <p className='text-md my-2' >Include a selection of high quality images representing your range of services (before and after photos, etc).</p>
                             </div>
-                            <section className="border border-dashed border-black mx-28 p-2 ">
+                            <section className="border border-dashed border-black w-[60%] m-auto p-2 ">
                                 <div className='flex justify-center align-middle m-auto ' >
                                     <img src={upload} alt="" />
                                 </div>
@@ -111,7 +110,7 @@ const ExpertUploadPage = () => {
                                 <span className='label-text font-bold'>File upload (Videos)</span>
                                 <p className='text-md my-2' >Include a selection of short, high quality clips highlighting your techniques or client testimonials.</p>
                             </div>
-                            <section className='border border-dashed border-black mx-28 p-2 ' >
+                            <section className='border border-dashed border-black w-[60%] m-auto p-2 ' >
                                 <div className='flex justify-center align-middle m-auto ' >
                                     <img src={upload} alt="" />
                                 </div>
