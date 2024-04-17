@@ -1,11 +1,11 @@
 import React from 'react'
-import barber from "../../assets/barber-background-image.png"
 import line from "../../assets/line-logo.png"
 import brokenLine from "../../assets/broken-line.png"
 import unchecked from "../../assets/unchecked-logo.png"
 import checked from "../../assets/checked-logo.png"
 import wideLine from "../../assets/wide-line.png"
 import nailTech from "../../assets/nail-tech-background-image.png"
+import upload from "../../assets/octicon_upload-24.png"
 
 const background = {
     backgroundImage: `url(${nailTech})`,
@@ -13,7 +13,7 @@ const background = {
     backgroundSize: 'cover',
     backgroundPosition: 'left',
     width: '100%',
-    height: '100vh'
+    height: '100%'
 }
 
 const ExpertUploadPage = () => {
@@ -38,21 +38,20 @@ const ExpertUploadPage = () => {
                             <p>Create account</p>
                         </div>
                     </div>
-                    <div className=' flex flex-row items-center p-0 w-32 h-6 flex-none order-1 flex-grow-0 ' >
+                    <div className=' sm:flex flex-row items-center p-0 w-32 h-6 flex-none order-1 flex-grow-0 hidden ' >
                         <img src={brokenLine} alt="" />
                         <img src={unchecked} alt="" />
                         <div className='p-2' >
                             <h3 className='font-bold' >STEP 2</h3>
-
                             <p>Upload Portfolio</p>
                         </div>
                     </div>
-                    <div className=' flex flex-row items-center p-0 w-32 h-6 flex-none order-1 flex-grow-0  ' >
+                    <div className=' sm:flex flex-row items-center p-0 w-32 h-6 flex-none order-1 flex-grow-0 hidden  ' >
                         <img src={line} alt="" />
                         <img src={unchecked} alt="" />
                         <h3 className='p-2 font-bold '>STEP 3</h3>
                     </div>
-                    <div className=' flex flex-row items-center p-0 w-32 h-6 flex-none order-1 flex-grow-0 ' >
+                    <div className=' sm:flex flex-row items-center p-0 w-32 h-6 flex-none order-1 flex-grow-0 hidden ' >
                         <img src={line} alt="" />
                         <img src={unchecked} alt="" />
                         <h3 className='p-2 font-bold '>STEP 4</h3>
@@ -60,42 +59,73 @@ const ExpertUploadPage = () => {
 
                 </div>
                 {/* end of sign in steps */}
-                {/* form */}
-                <div className=" flex flex-col place-items-center gap-10 w-[100%] h-[466px] my-7  ">
-                    <div className=' flex flex-col items-start  ' >
-                        {/* featured image upload */}
-                        <div >
-                        <span className='label-text font-bold'>Featured Image</span>
-                        <p className='text-md' >Upload a specific image to be the main thumbnail representing your portfolio</p>
 
+                {/* form */}
+                <div className=" w-[80%] m-auto my-7 p-3">
+                    <div className='  ' >
+                        {/* featured image upload */}
+                        <div className=' '>
+                            <div className='p-2' >
+                                <span className='label-text font-bold'>Featured Image</span>
+                                <p className='text-md my-2 ' >Upload a specific image to be the main thumbnail representing your portfolio</p>
+                            </div>
+
+                            <section className="border border-dashed border-black w-[60%] m-auto p-2 ">
+                                <div className=' flex justify-center align-middle m-auto '>
+                                    <img src={upload} alt="" />
+                                </div>
+                            <div className=" text-gray-500 w-70% m-auto ">
+                                <p className='flex justify-center align-middle' >Drag file here or click to upload</p>
+                                <p className='flex justify-center align-middle'>supported file: <span className=' text-black pl-1 whitespace-normal' >JPG, PNG</span></p>
+                                <p className='flex justify-center align-middle'>Max file size: <span className=' text-black pl-1 whitespace-normal' >5mb</span></p>
+                            </div>
+                            </section>
                         </div>
 
                         <hr /><hr /><br /><br />
                         {/* image upload */}
 
-                        <div>
-                            <p>
+                        <div className=' '>
+                            <div className='p-2' >
                                 <span className='label-text font-bold'>File upload (Images)</span>
-                            </p>
-                            <p className='text-md' >Include a selection of high quality images representing your range of services (before and after photos, etc).</p>
-                        
+                                <p className='text-md my-2' >Include a selection of high quality images representing your range of services (before and after photos, etc).</p>
+                            </div>
+                            <section className="border border-dashed border-black w-[60%] m-auto p-2 ">
+                                <div className='flex justify-center align-middle m-auto ' >
+                                    <img src={upload} alt="" />
+                                </div>
+                                <div className=" text-gray-500 w-70% m-auto ">
+                                    <p className='flex justify-center align-middle'>Drag file here or click to upload</p>
+                                    <p className='flex justify-center align-middle'>supported file: <span className=' text-black pl-1' >JPG, PNG</span></p>
+                                    <p className='flex justify-center align-middle'>Max file size: <span className=' text-black pl-1' >5mb</span></p>
+                                </div>  
+                            </section>      
                         </div>
 
                         <hr /><hr /><br /><br />
                         {/* video upload */}
 
-                        <div>                       
-                            <p>
+                        <div className=''>     
+                            <div className='p-2' >
                                 <span className='label-text font-bold'>File upload (Videos)</span>
-                            </p>
-                            <p className='text-md' >Include a selection of short, high quality clips highlighting your techniques or client testimonials.</p>
-                        
+                                <p className='text-md my-2' >Include a selection of short, high quality clips highlighting your techniques or client testimonials.</p>
+                            </div>
+                            <section className='border border-dashed border-black w-[60%] m-auto p-2 ' >
+                                <div className='flex justify-center align-middle m-auto ' >
+                                    <img src={upload} alt="" />
+                                </div>
+                                <div className="  text-gray-500 w-70% m-auto ">
+                                    <p className='flex justify-center align-middle'>Drag file here or click to upload</p>
+                                    <p className='flex justify-center align-middle'>supported file: <span className=' text-black pl-1' >JPG, PNG</span></p>
+                                    <p className='flex justify-center align-middle'>Max file size: <span className=' text-black pl-1' >5mb</span></p>
+                                </div>  
+                            </section>
                         </div>
                         {/* end of uploads */}
                     </div>
 
                     {/* button */}
-                    <div className=" card-actions justify-center">
+                    <div className=" card-actions justify-center mt-5 ">
                         <button className="btn btn-circle btn-sm px-16 btn-neutral">Next</button>
                     </div>
                 </div>
@@ -108,3 +138,4 @@ const ExpertUploadPage = () => {
 }
 
 export default ExpertUploadPage
+
