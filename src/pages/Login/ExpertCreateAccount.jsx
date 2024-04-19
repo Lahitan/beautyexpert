@@ -13,7 +13,7 @@ const background = {
 	backgroundSize: "cover",
 	backgroundPosition: "left",
 	width: "100%",
-	height: "100vh",
+	height: "100%",
 };
 
 const ExpertCreateAccount = () => {
@@ -47,17 +47,17 @@ const ExpertCreateAccount = () => {
 								<p>Create account</p>
 							</div>
 						</div>
-						<div className=" flex flex-row items-center p-0 w-32 h-6 flex-none order-1 flex-grow-0 ">
+						<div className=" sm:flex flex-row items-center p-0 w-32 h-6 flex-none order-1 flex-grow-0 hidden">
 							<img src={line} alt="" />
 							<img src={unchecked} alt="" />
 							<h3 className="ms-2  font-bold">STEP 2</h3>
 						</div>
-						<div className=" flex flex-row items-center p-0 w-32 h-6 flex-none order-1 flex-grow-0  ">
+						<div className=" sm:flex flex-row items-center p-0 w-32 h-6 flex-none order-1 flex-grow-0 hidden ">
 							<img src={line} alt="" />
 							<img src={unchecked} alt="" />
 							<h3 className="ms-2 font-bold ">STEP 3</h3>
 						</div>
-						<div className=" flex flex-row items-center p-0 w-32 h-6 flex-none order-1 flex-grow-0 ">
+						<div className=" sm:flex flex-row items-center p-0 w-32 h-6 flex-none order-1 flex-grow-0 hidden">
 							<img src={line} alt="" />
 							<img src={unchecked} alt="" />
 							<h3 className="ms-2 font-bold ">STEP 4</h3>
@@ -133,3 +133,4 @@ const ExpertCreateAccount = () => {
 };
 
 export default ExpertCreateAccount;
+

@@ -13,7 +13,7 @@ const background = {
 	backgroundSize: "cover",
 	backgroundPosition: "left",
 	width: "100%",
-	height: "100vh",
+	height: "100%",
 };
 
 const ExpertCreateAccountPage2 = () => {
@@ -40,7 +40,7 @@ const ExpertCreateAccountPage2 = () => {
 								<p>Create account</p>
 							</div>
 						</div>
-						<div className=" flex flex-row items-center p-0  h-6 flex-none order-1 flex-grow-0 ">
+						<div className=" sm:flex flex-row items-center p-0  h-6 flex-none order-1 flex-grow-0 hidden">
 							<img src={brokenLine} alt="" />
 							<img src={unchecked} alt="" />
 							<div className="ms-2">
@@ -49,12 +49,12 @@ const ExpertCreateAccountPage2 = () => {
 								<p>Upload Portfolio</p>
 							</div>
 						</div>
-						<div className=" flex flex-row items-center p-0  h-6 flex-none order-1 flex-grow-0  ">
+						<div className=" sm:flex flex-row items-center p-0  h-6 flex-none order-1 flex-grow-0 hidden ">
 							<img src={line} alt="" />
 							<img src={unchecked} alt="" />
 							<h3 className="ms-2 font-bold ">STEP 3</h3>
 						</div>
-						<div className=" flex flex-row items-center p-0  h-6 flex-none order-1 flex-grow-0 ">
+						<div className=" sm:flex flex-row items-center p-0  h-6 flex-none order-1 flex-grow-0 hidden">
 							<img src={line} alt="" />
 							<img src={unchecked} alt="" />
 							<h3 className="ms-2 font-bold ">STEP 4</h3>
@@ -62,7 +62,7 @@ const ExpertCreateAccountPage2 = () => {
 					</div>
 					{/* end of sign in steps */}
 					{/* form */}
-					<div className=" flex flex-col  place-items-center gap-10 w-[100%] h-[466px] my-7 text-sm ">
+					<div className=" w-6/12 m-auto my-7 text-sm ">
 						<div className=" flex flex-col items-start   ">
 							<div>
 								<span className=" font-bold text-sm ">Business Name</span>
