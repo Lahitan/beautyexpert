@@ -23,11 +23,13 @@ const ExpertCreateAccount = () => {
 				{/* background image */}
 				<div style={background} className=" ">
 					{/* headings */}
-					<div className="flex flex-col items-center justify-center ">
-						<h1 className=" font-bold">Create an account as an expert</h1>
+       
+
+					<div className="flex flex-col items-center justify-center  absolute inset-x-2 mb-16  ">
+						<h1 className=" font-bold lg:text-2xl mb-2">Create an account as an expert</h1>
 						<h2 className="h2">
 							Already have an account?
-							<Link to={"/login"} className=" ">
+							<Link to={"/login"} className=" text-black-700 text-sm font-bold">
 								{" "}
 								Log in
 							</Link>
@@ -36,7 +38,7 @@ const ExpertCreateAccount = () => {
 				</div>
 				<div>
 					{/* sign in steps */}
-					<div className=" grid sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 place-items-center text-xs  gap-3 p-5 mt-10 ">
+					<div className=" grid sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 place-items-center text-xs  gap-3 p-5 mt-16 ">
 						<img src={wideLine} alt="" className=" md:hidden lg:hidden " />
 						<div className=" flex flex-row items-center p-0 w-32 h-6 flex-none order-1 flex-grow-0 ">
 							<img src={loading} alt="" />
@@ -63,8 +65,8 @@ const ExpertCreateAccount = () => {
 					</div>
 					{/* end of sign in steps */}
 					{/* form */}
-					<div className=" flex flex-col  place-items-center gap-10 w-[100%] h-[466px] my-7 text-blackt ">
-						<div className=" flex flex-col  items-start   ">
+					<div className=" w-6/12 m-auto my-7 ">
+						<div className=" flex flex-col items-start ">
 							<div>
 								<span className="label-text font-bold">First Name</span>
 								<label className="input input-bordered flex items-center gap-9 bg-primary-brand ">
@@ -112,11 +114,12 @@ const ExpertCreateAccount = () => {
 								</div>
 							</div>
 						</div>
-						{/* button */}
-						<div className=" card-actions justify-center">
-							<button className="btn btn-circle btn-sm px-16 btn-neutral">
-								Next
-							</button>
+						
+                        {/* button */}
+						<div className=" card-actions justify-center py-3">							
+                            <Link to={"/ExpertCreateAccountPage2"} className=" ">
+								<button className="btn btn-circle btn-sm px-16 btn-neutral">Next</button>
+							</Link>							
 						</div>
 					</div>
 					{/* end of form  */}
