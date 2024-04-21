@@ -1,4 +1,4 @@
-#  [Beauty Expert]([Beauty Expert](https://6622f77cccd33c4bc4b34ebc--regal-centaur-53a4ca.netlify.app))
+#  ([Beauty Expert](https://6622f77cccd33c4bc4b34ebc--regal-centaur-53a4ca.netlify.app))
  
 Beauty expert is a web application that allows customers pick suitable experts for their beauty needs. It can be used to create profiles for experts which customers can browse through, see the work of the experts and then choose via their customers' own profile page.
  
@@ -62,7 +62,7 @@ This project is licensed under the MIT License
 
 ## Information about Quality Assurance Processes
 
-
+1. Lighthouse: The website was tested using Lighthouse Chrome Extension to check the ACcessbility, Performance and SEO.
 
 ## Limitations
 
