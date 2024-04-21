@@ -91,7 +91,7 @@ const Header = () => {
 							Log in
 						</NavLink>
 						<NavLink
-						
+							to={"LoginRoot"}
 							className={
 								" bg-tertiary-brand text-white font-medium lg:font-semibold me-1 lg:me-3 rounded-full  py-1 px-3 lg:py-2 lg:px-5"
 							}
