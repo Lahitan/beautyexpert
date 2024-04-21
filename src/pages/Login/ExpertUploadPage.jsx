@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import line from "../../assets/line-logo.png"
 import brokenLine from "../../assets/broken-line.png"
 import unchecked from "../../assets/unchecked-logo.png"
@@ -23,7 +24,7 @@ const ExpertUploadPage = () => {
             {/* background image */}
             <div style={background} className=' ' >
                 {/* headings */}
-                <div className='flex flex-col items-center justify-center '>
+                <div className='flex flex-col items-center justify-center absolute inset-x-2 my-4'>
                     <h1 className=' font-bold' >Create an account as an expert</h1>
                 </div>
             </div>
@@ -125,8 +126,10 @@ const ExpertUploadPage = () => {
                     </div>
 
                     {/* button */}
-                    <div className=" card-actions justify-center mt-5 ">
-                        <button className="btn btn-circle btn-sm px-16 btn-neutral">Next</button>
+                    <div className=" card-actions justify-center py-3">							
+                        <Link to={"/PaymentPlan"} className=" ">
+                            <button className="btn btn-circle btn-sm px-16 btn-neutral">Next</button>
+                        </Link>							
                     </div>
                 </div>
                 {/* end of form  */}

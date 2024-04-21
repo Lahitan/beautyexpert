@@ -39,11 +39,11 @@ const CustomerCreateAcount = () => {
 									<div >
 										<span className='label-text font-bold'>First Name</span>
 										<label className="input input-bordered flex items-center gap-9 bg-primary-brand mb-[1rem]">
-											<input type="text" className="grow" placeholder="Ajoke" />
+											<input type="text" className="grow" placeholder="Wilson" />
 										</label>
 										<span className='label-text font-bold'>Last Name</span>
 										<label className="input input-bordered flex items-center gap-9 bg-primary-brand mb-[1rem]">
-											<input type="text" className="grow" placeholder="Chidi" />
+											<input type="text" className="grow" placeholder="Nuella" />
 										</label>
 								</div>
 
@@ -75,8 +75,10 @@ const CustomerCreateAcount = () => {
 						</div>
 				   </div>
 								{/* button */}
-							<div className=" card-actions justify-center">
-									<button className="btn btn-circle btn-sm px-28 btn-neutral">Next</button>
+							<div className=" card-actions justify-center">							
+								<Link to={"/Login"} className=" ">
+									<button className="btn btn-circle btn-sm px-16 btn-neutral">Next</button>
+								</Link>							
 							</div>
                 </div>
 
