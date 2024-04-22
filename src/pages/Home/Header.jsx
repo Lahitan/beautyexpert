@@ -83,7 +83,7 @@ const Header = () => {
 					{/* adjusted the padding in the button for responsiveness*/}
 					<div className="">
 						<NavLink
-						
+							to={"Login"}
 							className={
 								" border border-tertiary-brand  me-1 lg:me-3 font-semibold rounded-full py-1 px-3 lg:py-2 lg:px-5"
 							}
