@@ -54,7 +54,7 @@ const Login = () => {
 				</div>
 				
 			</div>
-			<div className="mt-8">
+			<div className=" hidden lg:block lg:mt-8">
 				<p className=" text-xs p-2 text-center lg:text-base "><span className="text-accent">By logging in, it means you agree to our</span> Privacy Policy<span className="text-accent"> and </span>Terms of Service</p>
 			</div>
 			<Outlet />
