@@ -12,8 +12,9 @@ import ForgetPassword from "./pages/Login/ForgetPassword.jsx";
 import ExpertCreateAccount from "./pages/Login/ExpertCreateAccount.jsx";
 import ExpertCreateAccountPage2 from "./pages/Login/ExpertCreateAccountPage2.jsx";
 import ExpertUploadPage from "./pages/Login/ExpertUploadPage.jsx";
-import PaymentPlan from "./pages/Payment/PaymentPlan.jsx"
+import PaymentPlan from "./pages/Payment/PaymentPlan.jsx";
 import ResetPassword from "./pages/Login/ResetPassword.jsx";
+import CustomerHomepage from "./pages/CustomerPages/CustomerHomepage.jsx";
 
 const router = createBrowserRouter([
 	{
@@ -66,6 +67,10 @@ const router = createBrowserRouter([
 	{
 		path: "/ResetPassword",
 		element: <ResetPassword />,
+	},
+	{
+		path: "/CustomerHomepage",
+		element: <CustomerHomepage />,
 	},
 ]);
 
