@@ -23,13 +23,18 @@ const ExpertCreateAccount = () => {
 				{/* background image */}
 				<div style={background} className=" ">
 					{/* headings */}
+       
+
+					<div className="flex flex-col items-center justify-center  absolute inset-x-2 mb-16  ">
+						<h1 className=" font-bold lg:text-2xl mb-2">Create an account as an expert</h1>
+						<h2 className="h2">
 					<div className="flex flex-col items-center justify-center absolute left-[50%] -translate-x-[50%]">
 						<h1 className=" font-bold text-3xl">
 							Create an account as an expert
 						</h1>
 						<h2 className="text-2xl">
 							Already have an account?
-							<Link to={"/login"} className=" ">
+							<Link to={"/login"} className=" text-black-700 text-sm font-bold">
 								{" "}
 								Log in
 							</Link>
@@ -38,7 +43,7 @@ const ExpertCreateAccount = () => {
 				</div>
 				<div className="pt-6">
 					{/* sign in steps */}
-					<div className=" grid sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 place-items-center text-xs  p-5 mt-10 ">
+					<div className=" grid sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 place-items-center text-xs  gap-3 p-5 mt-16 ">
 						<img src={wideLine} alt="" className=" md:hidden lg:hidden " />
 						<div className=" flex flex-row items-center p-0 w-32 h-6 flex-none order-1 flex-grow-0 ">
 							<img src={loading} alt="" />

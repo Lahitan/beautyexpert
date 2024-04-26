@@ -1,11 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import barber from "../../assets/barber-background-image.png";
 import line from "../../assets/line-logo.png";
 import brokenLine from "../../assets/broken-line.png";
 import unchecked from "../../assets/unchecked-logo.png";
 import checked from "../../assets/checked-logo.png";
 import wideLine from "../../assets/wide-line.png";
-import { Link } from "react-router-dom";
 
 const background = {
 	backgroundImage: `url(${barber})`,

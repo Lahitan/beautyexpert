@@ -12,6 +12,8 @@ import ForgetPassword from "./pages/Login/ForgetPassword.jsx";
 import ExpertCreateAccount from "./pages/Login/ExpertCreateAccount.jsx";
 import ExpertCreateAccountPage2 from "./pages/Login/ExpertCreateAccountPage2.jsx";
 import ExpertUploadPage from "./pages/Login/ExpertUploadPage.jsx";
+import PaymentPlan from "./pages/Payment/PaymentPlan.jsx"
+import ResetPassword from "./pages/Login/ResetPassword.jsx";
 
 const router = createBrowserRouter([
 	{
@@ -52,6 +54,18 @@ const router = createBrowserRouter([
 	{
 		path: "/ExpertUploadPage",
 		element: <ExpertUploadPage />,
+	},
+	{
+		path: "/PaymentPlan",
+		element: <PaymentPlan />,
+	},
+	{
+		path: "/forgetPassword",
+		element: <ForgetPassword />,
+	},
+	{
+		path: "/ResetPassword",
+		element: <ResetPassword />,
 	},
 ]);
 
