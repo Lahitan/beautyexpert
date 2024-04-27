@@ -42,7 +42,7 @@ const Login = () => {
 
 					<div className=" card-actions justify-center">
 						<Link to={"/CustomerHomepage"}>
-							<button className="btn btn-circle btn-sm px-24 btn-neutral w-[3rem]">
+							<button className=" bg-tertiary-brand btn btn-circle btn-sm px-24 btn-neutral w-[3rem]">
 								Login
 							</button>
 						</Link>

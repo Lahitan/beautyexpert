@@ -4,6 +4,7 @@ import Customer_account from "../../assets/customer-account.png"
 import eye from "../../assets/eye-logo.png"
 
 
+
 const background = {
     backgroundImage: `url(${Customer_account})`,
     backgroundRepeat:'no-repeat',
@@ -90,7 +91,7 @@ const CustomerCreateAcount = () => {
                         {/* button */}
 						<div className=" card-actions justify-start py-3">							
                             <Link to={"/Login"} className=" ">
-								<button className="btn btn-circle btn-sm px-24 btn-neutral">Next</button>
+								<button className=" bg-tertiary-brand btn btn-circle btn-sm px-24 btn-neutral">Next</button>
 							</Link>							
 						</div>
 					</div>
