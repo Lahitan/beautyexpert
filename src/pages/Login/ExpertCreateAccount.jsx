@@ -65,63 +65,67 @@ const ExpertCreateAccount = () => {
 					</div>
 					{/* end of sign in steps */}
 					{/* form */}
+					
 					<div className=" w-6/12 m-auto my-7 ">
-						<div className=" flex flex-col items-start ">
-							<div>
-								<span className="label-text font-bold">First Name</span>
-								<label className="input input-bordered flex items-center gap-9 bg-primary-brand ">
-									<input type="text" className="grow" placeholder="Ajoke" />
-								</label>
-								<span className="label-text font-bold">Last Name</span>
-								<label className="input input-bordered flex items-center gap-9 bg-primary-brand ">
-									<input type="text" className="grow" placeholder="Chidi" />
-								</label>
+						<form action="#">
+							<div className=" flex flex-col items-start ">
+								<div>
+									<span className="label-text font-bold">First Name</span>
+									<label className="input input-bordered flex items-center gap-9 bg-primary-brand ">
+										<input type="text" className="grow" placeholder="Ajoke" />
+									</label>
+									<span className="label-text font-bold">Last Name</span>
+									<label className="input input-bordered flex items-center gap-9 bg-primary-brand ">
+										<input type="text" className="grow" placeholder="Chidi" />
+									</label>
+								</div>
+								<div>
+									<div>
+										<span className="label-text font-bold">Email</span>
+										<label className="input input-bordered flex items-center gap-2 bg-primary-brand ">
+											<input
+												type="text"
+												className="grow"
+												placeholder="Enter your email address"
+											/>
+										</label>
+									</div>
+									<div>
+										<span className="label-text font-bold">Password</span>
+										<label className="input input-bordered flex items-center gap-2 bg-primary-brand ">
+											<input
+												type="password"
+												className="grow"
+												placeholder="Password"
+											/>
+											<img src={eye} alt="" />
+										</label>
+										<span className=" text-xs text-gray-400">
+											Password must be 8 characters
+										</span>
+									</div>
+									<div>
+										<label className="input input-bordered flex items-center gap-2 bg-primary-brand ">
+											<input
+												type="password"
+												className="grow"
+												placeholder="Confirm password"
+											/>
+											<img src={eye} alt="" />
+										</label>
+									</div>
+								</div>
 							</div>
-							<div>
-								<div>
-									<span className="label-text font-bold">Email</span>
-									<label className="input input-bordered flex items-center gap-2 bg-primary-brand ">
-										<input
-											type="text"
-											className="grow"
-											placeholder="Enter your email address"
-										/>
-									</label>
-								</div>
-								<div>
-									<span className="label-text font-bold">Password</span>
-									<label className="input input-bordered flex items-center gap-2 bg-primary-brand ">
-										<input
-											type="password"
-											className="grow"
-											placeholder="Password"
-										/>
-										<img src={eye} alt="" />
-									</label>
-									<span className=" text-xs text-gray-400">
-										Password must be 8 characters
-									</span>
-								</div>
-								<div>
-									<label className="input input-bordered flex items-center gap-2 bg-primary-brand ">
-										<input
-											type="password"
-											className="grow"
-											placeholder="Confirm password"
-										/>
-										<img src={eye} alt="" />
-									</label>
-								</div>
+							
+							{/* button */}
+							<div className=" card-actions justify-center py-3">							
+								<Link to={"/ExpertCreateAccountPage2"} className=" ">
+									<button className="btn btn-circle btn-sm px-16 btn-neutral">Next</button>
+								</Link>							
 							</div>
-						</div>
-						
-                        {/* button */}
-						<div className=" card-actions justify-center py-3">							
-                            <Link to={"/ExpertCreateAccountPage2"} className=" ">
-								<button className="btn btn-circle btn-sm px-16 btn-neutral">Next</button>
-							</Link>							
-						</div>
+						</form>
 					</div>
+					
 					{/* end of form  */}
 				</div>
 			</div>
