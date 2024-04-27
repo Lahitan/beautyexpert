@@ -59,7 +59,7 @@ const CustomerServices = () => {
     ];
 
   return (
-    <div className=' bg-primary-brand p-12 ' >
+    <div className=' bg-primary-brand p-10 ' >
         {/* header */}
         <div className=' flex lg:flex-col-2 '>
             <div className=' w-12'>
@@ -102,7 +102,7 @@ const CustomerServices = () => {
 
         {/* Follow us section */}
 		<div className="flex mt-8 lg:col-span-2 items-center justify-center flex-grow">
-			<p className=" text-base font-bold mr-5">Follow us:</p>
+        <p className=" text-base font-bold mr-5 text-secondary-brand">Follow us:</p>
 		    {/*social media icons  */}
 			<div className="flex justify-between">
 				<div>
