@@ -15,6 +15,9 @@ import ExpertUploadPage from "./pages/Login/ExpertUploadPage.jsx";
 import PaymentPlan from "./pages/Payment/PaymentPlan.jsx";
 import ResetPassword from "./pages/Login/ResetPassword.jsx";
 import CustomerHomepage from "./pages/CustomerPages/CustomerHomepage.jsx";
+import CustomerServices from "./pages/CustomerPages/CustomerServices";
+import CustomerBooking from "./pages/CustomerPages/CustomerBooking.jsx";
+
 
 const router = createBrowserRouter([
 	{
@@ -72,6 +75,15 @@ const router = createBrowserRouter([
 		path: "/CustomerHomepage",
 		element: <CustomerHomepage />,
 	},
+	{
+		path: "/CustomerServices",
+		element: <CustomerServices />,
+	},
+	{
+		path: "/CustomerBooking",
+		element: <CustomerBooking />,
+	},
+	
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
