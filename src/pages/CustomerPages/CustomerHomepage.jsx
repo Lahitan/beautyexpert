@@ -75,7 +75,9 @@ const CustomerHomepage = () => {
 									</li>
 
 									<li>
-										<NavLink className= {"flex gap-2 items-center text-[#B1B1B1]"}>
+										<NavLink 
+											to="/CustomerProduct"
+										className= {"flex gap-2 items-center text-[#B1B1B1]"}>
 											Services
 										</NavLink>
 									</li>
@@ -202,7 +204,7 @@ const CustomerHomepage = () => {
 
 						{/*------ Top rating card 1---- */}
 
-						<div className="border-2 border-blue-300 rounded-lg w-[15.4rem]">
+						<div className="border-2 border-blue-300 rounded-lg gap-8 w-[15.4rem]">
 
 							<img src={Hair_dresser_flier_21} alt="" />
 
@@ -268,7 +270,7 @@ const CustomerHomepage = () => {
 							{/*------ A container for the cards writing and the heart icon: giving it a flex---- */}
 							<div className="flex gap-16 mt-3">
 								<div>
-									<h2  className=" text-black font-bold text-2xl mb-2">
+									<h2  className=" text-black font-bold text-xl mb-2 ">
 										Jacky Hair
 									</h2>
 									<div className="flex">
