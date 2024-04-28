@@ -17,6 +17,7 @@ import ResetPassword from "./pages/Login/ResetPassword.jsx";
 import CustomerHomepage from "./pages/CustomerPages/CustomerHomepage.jsx";
 import CustomerServices from "./pages/CustomerPages/CustomerServices";
 import CustomerBooking from "./pages/CustomerPages/CustomerBooking.jsx";
+import CustomerProduct from "./pages/CustomerPages/CustomerProduct.jsx";
 
 
 const router = createBrowserRouter([
@@ -82,6 +83,10 @@ const router = createBrowserRouter([
 	{
 		path: "/CustomerBooking",
 		element: <CustomerBooking />,
+	},
+	{
+		path: "/CustomerProduct",
+		element: <CustomerProduct />,
 	},
 	
 ]);

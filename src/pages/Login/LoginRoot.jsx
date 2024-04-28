@@ -14,7 +14,7 @@ const LoginRoot = () => {
 				<div className=" flex-col lg:flex-row flex justify-between  lg:px-6 lg:py-8">
 					{/* ----first: List your business------*/}
 
-					<div className="lg:mt-36 border-2 border-green-600 rounded-md p-4 mt-5">
+					<div className="lg:mt-36 border-2 border-green-600 rounded-md p-4 mt-5 lg:border-0">
 						<h3 className=" text-tertiary-brand text-2xl font-bold mb-8 ">
 							List your small/medium beauty business?
 						</h3>
@@ -37,7 +37,7 @@ const LoginRoot = () => {
 
 					{/* ----second: Hire an expert------*/}
 
-					<div className="lg:mt-36 border-2 border-green-600 rounded-md p-4 mt-8">
+					<div className="lg:mt-36 border-2 border-green-600 rounded-md p-4 mt-8 lg:border-0">
 						<h3 className=" text-tertiary-brand text-2xl font-bold mb-8">
 							Hire a beauty expert?
 						</h3>
