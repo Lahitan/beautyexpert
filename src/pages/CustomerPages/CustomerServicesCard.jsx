@@ -8,7 +8,7 @@ const CustomerServicesCard = ({ image, title, stars, price, heartLogo }) => {
 			<div className=" flex mb-2">{stars}</div>
             <div className=" flex flex-col-2 justify-between">
                 <p>{price}</p>
-                <img src={heartLogo} alt="" className=' w-9 h-8'/>
+                <img src={heartLogo} alt="" className=' w-8 h-8'/>
             </div>
 		</div>
 	);
