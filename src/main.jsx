@@ -22,6 +22,9 @@ import CustomerServicesNail from "./pages/CustomerPages/CustomerServicesNail.jsx
 import CustomerServicesFashion from "./pages/CustomerPages/CustomerServicesFashion";
 import CustomerBooking from "./pages/CustomerPages/CustomerBooking.jsx";
 import CustomerProduct from "./pages/CustomerPages/CustomerProduct.jsx";
+import CustomerBookingJacky from "./pages/CustomerPages/CustomerBookingJacky.jsx";
+import CustomerBookingJB from "./pages/CustomerPages/CustomerBookingJB.jsx"
+import CustomerBookingJays from "./pages/CustomerPages/CustomerBookingJays.jsx"
 
 
 const router = createBrowserRouter([
@@ -107,6 +110,22 @@ const router = createBrowserRouter([
 	{
 		path: "/CustomerProduct",
 		element: <CustomerProduct />,
+	},
+	{
+		path: "/CustomerBooking",
+		element: <CustomerBooking />,
+	},
+	{
+		path: "/CustomerBookingJB",
+		element: <CustomerBookingJB />,
+	},
+	{
+		path: "/CustomerBookingJacky",
+		element: <CustomerBookingJacky />,
+	},
+	{
+		path: "/CustomerBookingJays",
+		element: <CustomerBookingJays />,
 	},
 	
 ]);
