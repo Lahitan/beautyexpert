@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Customer_account from "../../assets/customer-account.png"
-import eye from "../../assets/eye-logo.png"
+import eye from "../../assets/eye-logo.png" 
 
 
 
@@ -11,8 +11,9 @@ const background = {
     backgroundSize: 'cover',
     backgroundPosition: 'left',
     width: '100%',
-    height: '100vh'
-}
+    height: '100vh',
+
+};
 
 const CustomerCreateAcount = () => {
 	return (
@@ -20,7 +21,7 @@ const CustomerCreateAcount = () => {
 		<div className=" items-center bg-primary-brand text-black">
 			<div className="grid md:grid-cols-2 lg:grid-cols-2">
 				{/* background image */}
-				<div style={background} className=" ">
+				<div style={background} className=" background">
 					{/* headings */}
        
 
@@ -37,7 +38,7 @@ const CustomerCreateAcount = () => {
 				</div>
 
 					{/* form */}
-					<div className="lg: mt-20">
+					<div className="lg:mt-20">
 					<div className=" w-6/12 m-auto my-7 ">
 						<div className=" flex flex-col items-start ">
 							<div>
@@ -63,7 +64,7 @@ const CustomerCreateAcount = () => {
 								</div>
 								<div>
 									<span className="label-text font-bold">Password</span>
-									<label className="input input-bordered flex items-center gap-2 bg-primary-brand lg:mb-[0.8rem]">
+									<label className="input input-bordered flex items-center lg:gap-2 bg-primary-brand lg:mb-[0.8rem]">
 										<input
 											type="password"
 											className="grow"
@@ -76,7 +77,7 @@ const CustomerCreateAcount = () => {
 									</span>
 								</div>
 								<div>
-									<label className="input input-bordered flex items-center gap-2 bg-primary-brand ">
+									<label className="input input-bordered flex items-center lg:gap-2 bg-primary-brand ">
 										<input
 											type="password"
 											className="grow"
