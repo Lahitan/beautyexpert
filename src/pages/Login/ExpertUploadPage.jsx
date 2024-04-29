@@ -14,7 +14,7 @@ const background = {
     backgroundSize: 'cover',
     backgroundPosition: 'left',
     width: '100%',
-    height: '100%'
+    height: '120vh'
 }
 
 const ExpertUploadPage = () => {
