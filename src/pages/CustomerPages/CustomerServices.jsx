@@ -69,16 +69,16 @@ const CustomerServices = () => {
                 <Link to={"/CustomerServices"} className="  ">
                     <button className="btn btn-circle btn-sm px-10 btn-neutral text-xs ">Hairstyling</button>
                 </Link>	
-                <Link to={"/CustomerServices"} className=" ">
+                <Link to={"/CustomerServicesBarber"} className=" ">
                     <button className="btn btn-circle btn-sm px-10 btn-neutral text-xs">Barbing</button>
                 </Link>	
-                <Link to={"/CustomerServices"} className=" ">
+                <Link to={"/CustomerServicesNail"} className=" ">
                     <button className="btn btn-circle btn-sm px-10 btn-neutral text-xs">Manicure</button>
                 </Link>	
-                <Link to={"/CustomerServices"} className=" ">
+                <Link to={"/CustomerServicesMakeup"} className=" ">
                     <button className="btn btn-circle btn-sm px-10 btn-neutral text-xs">Makeup</button>
                 </Link>	
-                <Link to={"/CustomerServices"} className=" ">
+                <Link to={"/CustomerServicesFashion"} className=" ">
                     <button className="btn btn-circle btn-sm px-10 btn-neutral text-xs">Fashion</button>
                 </Link>	
             </div>
