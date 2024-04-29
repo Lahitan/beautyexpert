@@ -103,7 +103,7 @@ const CustomerHomepage = () => {
 							{/* adjusted the padding in the button for responsiveness*/}
 							<div className="">
 								<NavLink
-									to={"Login"}
+									to={"/Login"}
 									className={
 										"   bg-tertiary-brand text-white me-1 lg:me-3 font-semibold rounded-full py-1 px-3 lg:py-2 lg:px-5"
 									}
@@ -111,7 +111,7 @@ const CustomerHomepage = () => {
 									Log in
 								</NavLink>
 								<NavLink
-									to={"LoginRoot"}
+									to={"/LoginRoot"}
 									className={
 										" bg-tertiary-brand text-white font-medium lg:font-semibold me-1 lg:me-3 rounded-full  py-1 px-3 lg:py-2 lg:px-5"
 									}
@@ -170,11 +170,11 @@ const CustomerHomepage = () => {
 						</h2>
 								{/*------Services image---- */}
 						<div className="flex gap-3 pb-3">
-							<img src={Home_img_1} alt="" />
-							<img src={Home_img_2} alt="" />
-							<img src={Home_img_3} alt="" />
-							<img src={Home_img_4} alt="" />
-							<img src={Home_img_5} alt="" />
+							<Link to={"/CustomerServices"}><img src={Home_img_1} alt="" /></Link>
+							<Link to={"/CustomerServicesBarber"}><img src={Home_img_2} alt="" /></Link>
+							<Link to={"/CustomerServicesNail"}><img src={Home_img_3} alt="" /></Link>
+							<Link to={"/CustomerServicesMakeup"}><img src={Home_img_4} alt="" /></Link>
+							<Link to={"/CustomerServicesFashion"}><img src={Home_img_5} alt="" /></Link>
 						</div>
 					</div>
 				</div>
@@ -206,7 +206,7 @@ const CustomerHomepage = () => {
 
 						<div className="border-2 border-blue-300 rounded-lg gap-8 w-[15.4rem]">
 
-							<img src={Hair_dresser_flier_21} alt="" />
+						<Link to={"/CustomerServicesBarber"}><img src={Hair_dresser_flier_21} alt="" /></Link> 
 
 							{/*------ A container for the cards writing and the heart icon: giving it a flex---- */}
 							<div className="flex gap-16 mt-3">
@@ -235,7 +235,8 @@ const CustomerHomepage = () => {
 						{/*------ Top rating card 2---- */}
 						<div className="border-2 border-blue-300 rounded-lg w-[15.4rem]">
 
-							<img src={Makeup_flier_21} alt="" />
+							<Link to={"/CustomerServicesMakeup"}><img src={Makeup_flier_21} alt="" /></Link> 
+
 
 							{/*------ A container for the cards writing and the heart icon: giving it a flex---- */}
 							<div className="flex  mt-3">
@@ -265,7 +266,8 @@ const CustomerHomepage = () => {
 						{/*------ Top rating card 3---- */}
 						<div className="border-2 border-blue-300 rounded-lg w-[15.4rem]">
 
-							<img src={Hair_dresser_flier_11} alt="" />
+							<Link to={"/CustomerServices"}><img src={Hair_dresser_flier_11} alt="" /></Link> 
+
 
 							{/*------ A container for the cards writing and the heart icon: giving it a flex---- */}
 							<div className="flex gap-16 mt-3">
@@ -294,7 +296,8 @@ const CustomerHomepage = () => {
 						{/*------ Top rating card 4---- */}
 						<div className="border-2 border-blue-300 rounded-lg w-[15.4rem]">
 
-							<img src={Ton_wear} alt="" />
+						<Link to={"/CustomerServicesFashion"}><img src={Ton_wear} alt="" /></Link> 
+
 
 							{/*------ A container for the cards writing and the heart icon: giving it a flex---- */}
 							<div className="flex  mt-3">

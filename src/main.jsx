@@ -16,6 +16,10 @@ import PaymentPlan from "./pages/Payment/PaymentPlan.jsx";
 import ResetPassword from "./pages/Login/ResetPassword.jsx";
 import CustomerHomepage from "./pages/CustomerPages/CustomerHomepage.jsx";
 import CustomerServices from "./pages/CustomerPages/CustomerServices";
+import CustomerServicesBarber from "./pages/CustomerPages/CustomerServicesBarber.jsx";
+import CustomerServicesMakeup from "./pages/CustomerPages/CustomerServicesMakeup.jsx";
+import CustomerServicesNail from "./pages/CustomerPages/CustomerServicesNail.jsx";
+import CustomerServicesFashion from "./pages/CustomerPages/CustomerServicesFashion";
 import CustomerBooking from "./pages/CustomerPages/CustomerBooking.jsx";
 import CustomerProduct from "./pages/CustomerPages/CustomerProduct.jsx";
 
@@ -78,11 +82,27 @@ const router = createBrowserRouter([
 	},
 	{
 		path: "/CustomerServices",
-		element: <CustomerServices />,
+		element: <CustomerServices/>,
+	},	
+	{
+		path: "/CustomerServicesBarber",
+		element: <CustomerServicesBarber />,
 	},
 	{
-		path: "/CustomerBooking",
-		element: <CustomerBooking />,
+		path: "/CustomerServicesBarber",
+		element: <CustomerServicesBarber />,
+	},
+	{
+		path: "/CustomerServicesNail",
+		element: <CustomerServicesNail />,
+	},
+	{
+		path: "/CustomerServicesMakeup",
+		element: <CustomerServicesMakeup />,
+	},
+	{
+		path: "/CustomerServicesFashion",
+		element: <CustomerServicesFashion />,
 	},
 	{
 		path: "/CustomerProduct",

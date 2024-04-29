@@ -13,7 +13,7 @@ const background = {
 	backgroundSize: "cover",
 	backgroundPosition: "left",
 	width: "100%",
-	height: "100%",
+	height: "120vh",
 };
 
 const ExpertCreateAccountPage2 = () => {
@@ -139,7 +139,7 @@ const ExpertCreateAccountPage2 = () => {
                                 </div>
                             </div>
                             {/* button */}
-                            <div className=" card-actions justify-center">
+                            <div className=" card-actions justify-center py-2">
                                 <Link to={"/ExpertUploadPage"}>
                                     <button className="btn btn-circle btn-sm px-16 btn-neutral">
                                         Next
