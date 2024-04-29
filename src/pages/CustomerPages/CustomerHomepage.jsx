@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
@@ -27,6 +27,9 @@ import fb_logo from "../../assets/fb-logo.png"
 import ig_logo from "../../assets/ig-logo.png"
 import linkedin_logo from "../../assets/linkedin-logo.png"
 import twitter_logo from "../../assets/twitter-logo.png"
+import { FaBars } from "react-icons/fa6";
+import { GrClose } from "react-icons/gr";
+
 
 
 
@@ -41,6 +44,12 @@ const background = {
 
 
 const CustomerHomepage = () => {
+
+	const [menu, setMenu] = useState(false);
+	const handleMenu = () => {
+		setMenu(!menu);
+	};
+
 	return <div>
 
 		<div className=" bg-primary-brand">
@@ -55,43 +64,56 @@ const CustomerHomepage = () => {
 							{/* added padding to the div directly under this div*/}
 
 							<div className=" flex items-center gap-6 p-3">
+								{!menu ? (
+									<FaBars className=" text-2xl lg:hidden" onClick={handleMenu} />
+								) : (
+									<GrClose className=" text-2xl lg:hidden" onClick={handleMenu} />
+								)}
 
 								{/* changed the width of the logo for responsivness*/}
 								<div>
 									<img src={logo} alt="" className=" sm:w-11 w-8" />
 								</div>
-								<ul
-									className={"lg:flex gap-5 absolute lg:relative top-16 lg:top-0 left-0 right-0 ps-10 lg:ps-0 py-4 lg:py-0"
-										
-									}
-								>
-									<li>
-										<NavLink
-											to="/"
-											className={"  text-[#B1B1B1] "}	
+
+									<ul
+										className={`lg:flex gap-5 absolute lg:relative top-16 lg:top-0 bg-white lg:bg-transparent left-0 right-0 ps-10 lg:ps-0 py-4 lg:py-0 ${
+										!menu && "hidden"
+										}`}
 										>
-											Home
-										</NavLink>
-									</li>
+
+										<li>
+											<NavLink
+												to="/"
+												className={({ isActive }) =>
+														isActive ? " text-[#3992EE]" : "text-[#B1B1B1]"
+												}	
+											>
+												Home
+											</NavLink>
+										</li>
 
 									<li>
 										<NavLink 
-											to="/CustomerProduct"
-										className= {"flex gap-2 items-center text-[#B1B1B1]"}>
+										to="/CustomerProduct"
+											className={`flex gap-2 items-center ${({ isActive }) =>
+											isActive ? " text-[#3992EE]" : "text-[#B1B1B1]"}`}
+											>
 											Services
 										</NavLink>
 									</li>
 
 									<li>
 										<NavLink
-											className={"flex gap-2 items-center text-[#B1B1B1]"}
+											className={`flex gap-2 items-center ${({ isActive }) =>
+											isActive ? " text-[#3992EE]" : "text-[#B1B1B1]"}`}
 										>
 											About us
 										</NavLink>
 									</li>
 									<li>
 										<NavLink
-											className={"flex gap-2 items-center text-[#B1B1B1]"}
+											className={`flex gap-2 items-center ${({ isActive }) =>
+											isActive ? " text-[#3992EE]" : "text-[#B1B1B1]"}`}
 										>
 											Contact us
 										</NavLink>
@@ -105,18 +127,18 @@ const CustomerHomepage = () => {
 								<NavLink
 									to={"/Login"}
 									className={
-										"   bg-tertiary-brand text-white me-1 lg:me-3 font-semibold rounded-full py-1 px-3 lg:py-2 lg:px-5"
+										"   bg-tertiary-brand text-white me-1 lg:me-3 font-semibold rounded-full py-1 px-3 lg:py-2 lg:px-5 text-base"
 									}
 								>
-									Log in
+									Log_in
 								</NavLink>
 								<NavLink
 									to={"/LoginRoot"}
 									className={
-										" bg-tertiary-brand text-white font-medium lg:font-semibold me-1 lg:me-3 rounded-full  py-1 px-3 lg:py-2 lg:px-5"
+										" bg-tertiary-brand text-white font-medium lg:font-semibold me-1 lg:me-3 rounded-full  py-1 px-3 lg:py-2 lg:px-5 text-base"
 									}
 								>
-									Sign up
+									Sign_up
 								</NavLink>
 							</div>
 
@@ -132,16 +154,16 @@ const CustomerHomepage = () => {
 				<div className="flex flex-col items-center justify-center mt-8">
 
 					{/*------input field---- */}
-					<div className="w-[52rem] text-center">
-						<h2 className=" text-white font-bold text-2xl mb-3">
+					<div className=" w-[23rem] lg:w-[52rem]  text-center">
+						<h2 className=" text-white font-bold  text-xl lg:text-2xl mt-20 mb-3">
 							Discover and book BeautyXpat professional near you
 						</h2>
 							<Link to={"/"} className=" ">
-									<button className=" bg-tertiary-brand btn btn-circle btn-sm px-16 btn-neutral mb-8">Book_an_expert</button>
+									<button className="  bg-tertiary-brand btn btn-circle btn-sm px-16 btn-neutral mb-8">Book_an_expert</button>
 							</Link>	
 
-							<div className="flex gap-9">
-								<label className="input input-bordered flex items-center gap-2 w-[28.75rem] h-[2.5rem]">
+							<div className="flex flex-col lg:flex-row items-center lg:gap-9 gap-5">
+								<label className="input input-bordered flex items-center gap-2 w-[16.5rem] lg:w-[28.75rem] h-[2.5rem]">
 									<input
 									type="text"
 									className="grow"
@@ -150,7 +172,7 @@ const CustomerHomepage = () => {
 									<img className="w-4 h-4 opacity-70" src={Search} alt="" />
 								</label>
 							
-								<label className="input input-bordered flex items-center gap-2 w-[16.87rem] h-[2.5rem]">
+								<label className="input input-bordered flex items-center gap-2 w-[15rem] lg:w-[16.87rem] h-[2.5rem]">
 									<input
 									type="text"
 									className="grow"
@@ -161,22 +183,22 @@ const CustomerHomepage = () => {
 
 							</div>	
 					</div>
-						{/*------Input field Ends---- */}
+								{/*------Input field Ends---- */}
 
-						{/*------Services you need---- */}
-					<div  className="w-[42rem] bg-[#FFE9E9] flex flex-col items-center justify-center p-4 rounded-lg mt-32 xl:mt-52">
-						<h2  className=" text-black font-bold text-2xl mb-2">
-							What services do you need? 
-						</h2>
-								{/*------Services image---- */}
-						<div className="flex gap-3 pb-3">
-							<Link to={"/CustomerServices"}><img src={Home_img_1} alt="" /></Link>
-							<Link to={"/CustomerServicesBarber"}><img src={Home_img_2} alt="" /></Link>
-							<Link to={"/CustomerServicesNail"}><img src={Home_img_3} alt="" /></Link>
-							<Link to={"/CustomerServicesMakeup"}><img src={Home_img_4} alt="" /></Link>
-							<Link to={"/CustomerServicesFashion"}><img src={Home_img_5} alt="" /></Link>
-						</div>
-					</div>
+								{/*------Services you need---- */}
+							<div  className=" hidden  w-[42rem] bg-[#FFE9E9] lg:flex flex-col items-center justify-center p-4 rounded-lg mt-32 xl:mt-52">
+									<h2  className=" text-black font-bold text-2xl mb-2">
+										What services do you need? 
+									</h2>
+											{/*------Services image---- */}
+									<div className="flex gap-3 pb-3">
+										<Link to={"/CustomerServices"}><img src={Home_img_1} alt="" /></Link>
+										<Link to={"/CustomerServicesBarber"}><img src={Home_img_2} alt="" /></Link>
+										<Link to={"/CustomerServicesNail"}><img src={Home_img_3} alt="" /></Link>
+										<Link to={"/CustomerServicesMakeup"}><img src={Home_img_4} alt="" /></Link>
+										<Link to={"/CustomerServicesFashion"}><img src={Home_img_5} alt="" /></Link>
+									</div>
+							</div>
 				</div>
 			</div>
 			{/*------ End of Hero section---- */}
@@ -338,22 +360,22 @@ const CustomerHomepage = () => {
 
 				{/*------ Booking section starts here---- */}
 
-				<div className=" mt-20 flex gap-8">
+				<div className=" mt-20 flex flex-col lg:flex-row gap-8">
 
 						{/*------ First card---- */}
 
-					<div className="w-[34.87rem] flex flex-col  bg-[#12522D] rounded-2xl">
+					<div className=" w-[20rem] lg:w-[28.87rem] flex flex-col  bg-[#12522D] rounded-2xl">
 
 						{/*------ text container---- */}
 							<div className=" p-4 flex flex-col">
 								<h2 className=" text-center  text-white font-bold text-2xl mb-2 tracking-wide">
 									Book with the best near you
 								</h2>
-								<p className="w-[29.25rem] text-white mb-2">
+								<p className=" w-[16rem] lg:w-[25.25rem] text-white mb-2">
 									Looking for your next appointment with a hair stylist, 
 									barber or nail technician?
 								</p>
-								<p  className="w-[29.25rem] text-white mb-4">
+								<p  className=" w-[16rem] lg:w-[23.25rem] text-white mb-6">
 									Search through our beauty expert’s portfolio and schedule 
 									your appointment with your best.
 								</p>
@@ -372,17 +394,17 @@ const CustomerHomepage = () => {
 						</div>
 
 							{/*------ Second card---- */}
-						<div className="w-[34.87rem] flex flex-col  bg-[#12522D] rounded-2xl">
+						<div className=" w-[20rem] lg:w-[25.87rem] flex flex-col  bg-[#12522D] rounded-2xl">
 
 							{/*------ text container---- */}
 								<div className=" p-4 flex flex-col">
 									<h2 className=" text-center  text-white font-bold text-2xl mb-2 tracking-wide">
 									Something Come up? We’ve got you
 									</h2>
-									<p className="w-[29.25rem] text-white mb-8">
+									<p className=" w-[16rem] lg:w-[29.25rem] text-white mb-8">
 										Reschedule or cancle with ease
 									</p>
-									<p  className="w-[29.25rem] text-white mb-4">
+									<p  className="w-[16rem] lg:w-[23.25rem] text-white mb-4">
 										And because we know life get busy. We will  send you reminders.
 										So you don’t forget or miss out on another appointment.
 									</p>
@@ -407,7 +429,7 @@ const CustomerHomepage = () => {
 
 					<div className="mt-20 flex flex-col items-center justify-center ">
 
-						<h2 className="text-black font-bold text-2xl mb-2">
+						<h2 className="text-black font-bold text-lg lg:text-2xl mb-2">
 							Find a BeautyXpat specalist by location
 						</h2>
 
@@ -552,8 +574,8 @@ const CustomerHomepage = () => {
 						
 						{/*------ Footer starts here---- */}
 						<div className="text-[#12522D] flex flex-col justify-center items-center" >
-							<div className="flex gap-6 items-center mb-10">
-								<h3 className=" font-bold text-lg">
+							<div className="flex gap-3 lg:gap-6 items-center mb-10">
+								<h3 className=" font-bold text-base lg:text-lg">
 									Follow us:
 								</h3>
 
