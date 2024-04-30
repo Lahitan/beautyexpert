@@ -72,7 +72,7 @@ const Login = () => {
 					Service
 				</p>
 			</div>
-			<Outlet />
+			<Link to={"/CustomerDashboard"}>click here</Link>
 		</div>
 	);
 };

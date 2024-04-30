@@ -15,6 +15,9 @@ import ExpertUploadPage from "./pages/Login/ExpertUploadPage.jsx";
 import PaymentPlan from "./pages/Payment/PaymentPlan.jsx";
 import ResetPassword from "./pages/Login/ResetPassword.jsx";
 import CustomerHomepage from "./pages/CustomerPages/CustomerHomepage.jsx";
+import CustomerDashboard from "./pages/CustomerPages/CustomerDashboard.jsx";
+import EditProfile from "./pages/CustomerPages/EditProfile.jsx";
+import ScheduleAppointment from "./pages/CustomerPages/ScheduleAppointment.jsx";
 
 const router = createBrowserRouter([
 	{
@@ -71,6 +74,27 @@ const router = createBrowserRouter([
 	{
 		path: "/CustomerHomepage",
 		element: <CustomerHomepage />,
+	},
+	{
+		path: "CustomerDashboard",
+		element: <CustomerDashboard />,
+		children: [
+			{
+				path: "CustomerProfile",
+				element: <EditProfile />,
+				index: true,
+			},
+			{
+				path: "CustomerProfile",
+				element: <EditProfile />,
+				index: true,
+			},
+		],
+	},
+	{
+		path: "/ScheduleAppointment",
+		element: <ScheduleAppointment />,
+		index: true,
 	},
 ]);
 

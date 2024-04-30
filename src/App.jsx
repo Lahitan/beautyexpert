@@ -3,7 +3,7 @@ import "./App.css";
 import Layout from "./pages/Home/Layout";
 import { Outlet } from "react-router-dom";
 
-function App() {
+function App({ children }) {
 	return (
 		<>
 			<Outlet />
