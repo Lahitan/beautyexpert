@@ -37,12 +37,12 @@ const navArr = [
 	{
 		icon: <PiHouseLight className=" text-3xl text-secondary-brand" />,
 		text: "Home",
-		path: "/home",
+		path: "/CustomerHomepage",
 	},
 	{
 		icon: <CgProfile className=" text-3xl text-secondary-brand" />,
 		text: "Profile",
-		path: "EditProfile",
+		path: "/CustomerDashboard",
 	},
 	{
 		icon: (
