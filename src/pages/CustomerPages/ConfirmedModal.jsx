@@ -34,7 +34,7 @@ const ConfirmedModal = ({ date, time }) => {
 
 					<div className="my-8 text-center">
 						<h3 className=" font-bold text-xl">TJ;s Unisex Salon </h3>
-						<p>address</p>
+						<p>56 Surulere, Lawanson Lagos State</p>
 					</div>
 
 					<div className="flex gap-4 my-6">
