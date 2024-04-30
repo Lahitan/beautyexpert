@@ -15,6 +15,17 @@ import ExpertUploadPage from "./pages/Login/ExpertUploadPage.jsx";
 import PaymentPlan from "./pages/Payment/PaymentPlan.jsx";
 import ResetPassword from "./pages/Login/ResetPassword.jsx";
 import CustomerHomepage from "./pages/CustomerPages/CustomerHomepage.jsx";
+import CustomerServices from "./pages/CustomerPages/CustomerServices";
+import CustomerServicesBarber from "./pages/CustomerPages/CustomerServicesBarber.jsx";
+import CustomerServicesMakeup from "./pages/CustomerPages/CustomerServicesMakeup.jsx";
+import CustomerServicesNail from "./pages/CustomerPages/CustomerServicesNail.jsx";
+import CustomerServicesFashion from "./pages/CustomerPages/CustomerServicesFashion";
+import CustomerBooking from "./pages/CustomerPages/CustomerBooking.jsx";
+import CustomerProduct from "./pages/CustomerPages/CustomerProduct.jsx";
+import CustomerBookingJacky from "./pages/CustomerPages/CustomerBookingJacky.jsx";
+import CustomerBookingJB from "./pages/CustomerPages/CustomerBookingJB.jsx";
+import CustomerBookingJays from "./pages/CustomerPages/CustomerBookingJays.jsx";
+
 import CustomerDashboard from "./pages/CustomerPages/CustomerDashboard.jsx";
 import EditProfile from "./pages/CustomerPages/EditProfile.jsx";
 import ScheduleAppointment from "./pages/CustomerPages/ScheduleAppointment.jsx";
@@ -75,6 +86,51 @@ const router = createBrowserRouter([
 		path: "/CustomerHomepage",
 		element: <CustomerHomepage />,
 	},
+	{
+		path: "/CustomerServices",
+		element: <CustomerServices />,
+	},
+	{
+		path: "/CustomerServicesBarber",
+		element: <CustomerServicesBarber />,
+	},
+	{
+		path: "/CustomerServicesBarber",
+		element: <CustomerServicesBarber />,
+	},
+	{
+		path: "/CustomerServicesNail",
+		element: <CustomerServicesNail />,
+	},
+	{
+		path: "/CustomerServicesMakeup",
+		element: <CustomerServicesMakeup />,
+	},
+	{
+		path: "/CustomerServicesFashion",
+		element: <CustomerServicesFashion />,
+	},
+	{
+		path: "/CustomerProduct",
+		element: <CustomerProduct />,
+	},
+	{
+		path: "/CustomerBooking",
+		element: <CustomerBooking />,
+	},
+	{
+		path: "/CustomerBookingJB",
+		element: <CustomerBookingJB />,
+	},
+	{
+		path: "/CustomerBookingJacky",
+		element: <CustomerBookingJacky />,
+	},
+	{
+		path: "/CustomerBookingJays",
+		element: <CustomerBookingJays />,
+	},
+
 	{
 		path: "CustomerDashboard",
 		element: <CustomerDashboard />,

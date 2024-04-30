@@ -14,7 +14,7 @@ const background = {
     backgroundSize: 'cover',
     backgroundPosition: 'left',
     width: '100%',
-    height: '100%'
+    height: '120vh'
 }
 
 const ExpertUploadPage = () => {
@@ -63,74 +63,76 @@ const ExpertUploadPage = () => {
 
                 {/* form */}
                 <div className=" w-[80%] m-auto my-7 p-3">
-                    <div className='  ' >
-                        {/* featured image upload */}
-                        <div className=' '>
-                            <div className='p-2' >
-                                <span className='label-text font-bold'>Featured Image</span>
-                                <p className='text-md my-2 ' >Upload a specific image to be the main thumbnail representing your portfolio</p>
-                            </div>
-
-                            <section className="border border-dashed border-black w-[60%] m-auto p-2 ">
-                                <div className=' flex justify-center align-middle m-auto '>
-                                    <img src={upload} alt="" />
+                    <form action="">
+                        <div className='  ' >
+                            {/* featured image upload */}
+                            <div className=' '>
+                                <div className='p-2' >
+                                    <span className='label-text font-bold'>Featured Image</span>
+                                    <p className='text-md my-2 ' >Upload a specific image to be the main thumbnail representing your portfolio</p>
                                 </div>
-                            <div className=" text-gray-500 w-70% m-auto ">
-                                <p className='flex justify-center align-middle' >Drag file here or click to upload</p>
-                                <p className='flex justify-center align-middle'>supported file: <span className=' text-black pl-1 whitespace-normal' >JPG, PNG</span></p>
-                                <p className='flex justify-center align-middle'>Max file size: <span className=' text-black pl-1 whitespace-normal' >5mb</span></p>
-                            </div>
-                            </section>
-                        </div>
 
-                        <hr /><hr /><br /><br />
-                        {/* image upload */}
-
-                        <div className=' '>
-                            <div className='p-2' >
-                                <span className='label-text font-bold'>File upload (Images)</span>
-                                <p className='text-md my-2' >Include a selection of high quality images representing your range of services (before and after photos, etc).</p>
-                            </div>
-                            <section className="border border-dashed border-black w-[60%] m-auto p-2 ">
-                                <div className='flex justify-center align-middle m-auto ' >
-                                    <img src={upload} alt="" />
-                                </div>
+                                <section className="border border-dashed border-black w-[60%] m-auto p-2 ">
+                                    <div className=' flex justify-center align-middle m-auto '>
+                                        <img src={upload} alt="" />
+                                    </div>
                                 <div className=" text-gray-500 w-70% m-auto ">
-                                    <p className='flex justify-center align-middle'>Drag file here or click to upload</p>
-                                    <p className='flex justify-center align-middle'>supported file: <span className=' text-black pl-1' >JPG, PNG</span></p>
-                                    <p className='flex justify-center align-middle'>Max file size: <span className=' text-black pl-1' >5mb</span></p>
-                                </div>  
-                            </section>      
-                        </div>
-
-                        <hr /><hr /><br /><br />
-                        {/* video upload */}
-
-                        <div className=''>     
-                            <div className='p-2' >
-                                <span className='label-text font-bold'>File upload (Videos)</span>
-                                <p className='text-md my-2' >Include a selection of short, high quality clips highlighting your techniques or client testimonials.</p>
-                            </div>
-                            <section className='border border-dashed border-black w-[60%] m-auto p-2 ' >
-                                <div className='flex justify-center align-middle m-auto ' >
-                                    <img src={upload} alt="" />
+                                    <p className='flex justify-center align-middle' >Drag file here or click to upload</p>
+                                    <p className='flex justify-center align-middle'>supported file: <span className=' text-black pl-1 whitespace-normal' >JPG, PNG</span></p>
+                                    <p className='flex justify-center align-middle'>Max file size: <span className=' text-black pl-1 whitespace-normal' >5mb</span></p>
                                 </div>
-                                <div className="  text-gray-500 w-70% m-auto ">
-                                    <p className='flex justify-center align-middle'>Drag file here or click to upload</p>
-                                    <p className='flex justify-center align-middle'>supported file: <span className=' text-black pl-1' >JPG, PNG</span></p>
-                                    <p className='flex justify-center align-middle'>Max file size: <span className=' text-black pl-1' >5mb</span></p>
-                                </div>  
-                            </section>
-                        </div>
-                        {/* end of uploads */}
-                    </div>
+                                </section>
+                            </div>
 
-                    {/* button */}
-                    <div className=" card-actions justify-center py-3">							
-                        <Link to={"/PaymentPlan"} className=" ">
-                            <button className="btn btn-circle btn-sm px-16 btn-neutral">Next</button>
-                        </Link>							
-                    </div>
+                            <hr /><hr /><br /><br />
+                            {/* image upload */}
+
+                            <div className=' '>
+                                <div className='p-2' >
+                                    <span className='label-text font-bold'>File upload (Images)</span>
+                                    <p className='text-md my-2' >Include a selection of high quality images representing your range of services (before and after photos, etc).</p>
+                                </div>
+                                <section className="border border-dashed border-black w-[60%] m-auto p-2 ">
+                                    <div className='flex justify-center align-middle m-auto ' >
+                                        <img src={upload} alt="" />
+                                    </div>
+                                    <div className=" text-gray-500 w-70% m-auto ">
+                                        <p className='flex justify-center align-middle'>Drag file here or click to upload</p>
+                                        <p className='flex justify-center align-middle'>supported file: <span className=' text-black pl-1' >JPG, PNG</span></p>
+                                        <p className='flex justify-center align-middle'>Max file size: <span className=' text-black pl-1' >5mb</span></p>
+                                    </div>  
+                                </section>      
+                            </div>
+
+                            <hr /><hr /><br /><br />
+                            {/* video upload */}
+
+                            <div className=''>     
+                                <div className='p-2' >
+                                    <span className='label-text font-bold'>File upload (Videos)</span>
+                                    <p className='text-md my-2' >Include a selection of short, high quality clips highlighting your techniques or client testimonials.</p>
+                                </div>
+                                <section className='border border-dashed border-black w-[60%] m-auto p-2 ' >
+                                    <div className='flex justify-center align-middle m-auto ' >
+                                        <img src={upload} alt="" />
+                                    </div>
+                                    <div className="  text-gray-500 w-70% m-auto ">
+                                        <p className='flex justify-center align-middle'>Drag file here or click to upload</p>
+                                        <p className='flex justify-center align-middle'>supported file: <span className=' text-black pl-1' >JPG, PNG</span></p>
+                                        <p className='flex justify-center align-middle'>Max file size: <span className=' text-black pl-1' >5mb</span></p>
+                                    </div>  
+                                </section>
+                            </div>
+                            {/* end of uploads */}
+                        </div>
+
+                        {/* button */}
+                        <div className=" card-actions justify-center py-3">							
+                            <Link to={"/PaymentPlan"} className=" ">
+                                <button className="btn btn-circle btn-sm px-16 btn-neutral">Next</button>
+                            </Link>							
+                        </div>
+                    </form>
                 </div>
                 {/* end of form  */}
             </div>

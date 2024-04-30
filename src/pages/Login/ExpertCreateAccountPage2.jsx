@@ -13,7 +13,7 @@ const background = {
 	backgroundSize: "cover",
 	backgroundPosition: "left",
 	width: "100%",
-	height: "100%",
+	height: "120vh",
 };
 
 const ExpertCreateAccountPage2 = () => {
@@ -63,88 +63,90 @@ const ExpertCreateAccountPage2 = () => {
 					{/* end of sign in steps */}
 					{/* form */}
 					<div className=" w-6/12 m-auto my-7 text-sm ">
-						<div className=" flex flex-col items-start   ">
-							<div>
-								<span className=" font-bold text-sm ">Business Name</span>
-								<label className="input input-bordered border-[#999] flex items-center gap-1 bg-primary-brand ">
-									<input
-										type="text"
-										className="grow text-sm"
-										placeholder="Enter your business name "
-									/>
-								</label>
-							</div>
-							<div>
-								<p>
-									<span className=" font-bold">Business Location</span>
-								</p>
-								<p>
-									<span className=" font-bold">Address Line 1 </span>
-								</p>
-								<label className="input input-bordered border-[#999] flex items-center gap-9 bg-primary-brand ">
-									<input
-										type="text"
-										className="grow text-sm"
-										placeholder="12 Adeola Odeku Street, Victoria Island"
-									/>
-								</label>
-								<p>
-									<span className=" font-bold">Address Line 2 (optional)</span>
-								</p>
-								<label className="input input-bordered border-[#999] flex items-center gap-9 bg-primary-brand ">
-									<input
-										type="text"
-										className="grow text-sm"
-										placeholder="Suite A3, Victoria Island Plaza"
-									/>
-								</label>
-							</div>
-							<div>
-								<div>
-									<span className=" font-bold">Service category</span>
-									<select className="select select-bordered w-full max-w-xs bg-primary-brand">
-										<option className="bg-white  " disabled selected>
-											Select a service you offer
-										</option>
-										<option className="bg-white">Fashion designer</option>
-										<option className="bg-white">Makeup artist</option>
-										<option className="bg-white">Hair Stylist</option>
-										<option className="bg-white">Barber</option>
-										<option className="bg-white">Personal Stylist</option>
-										<option className="bg-white">Nail technician</option>
-									</select>
-								</div>
-								<div>
-									<label className="form-control">
-										<div className="label">
-											<span className=" font-bold">Service description</span>
-										</div>
-										<textarea
-											className="textarea textarea-bordered bg-primary-brand h-24 text-sm"
-											placeholder="Describe your service"
-										></textarea>
-									</label>
-								</div>
-								<div>
-									<span className=" font-bold">Years of experience</span>
-									<label className="input input-bordered border-[#999] flex items-center gap-2 bg-primary-brand ">
-										<input
-											type="text"
-											className="grow text-sm"
-											placeholder="2 years"
-										/>
-									</label>
-								</div>
-							</div>
-						</div>
-						{/* button */}
-						<div className=" card-actions justify-center">
-							<Link to={"/ExpertUploadPage"}>
-								<button className="btn btn-circle btn-sm px-16 btn-neutral">
-									Next
-								</button>
-							</Link>
-						</div>
+						<form action="">
+                            <div className=" flex flex-col items-start   ">
+                                <div>
+                                    <span className=" font-bold text-sm ">Business Name</span>
+                                    <label className="input input-bordered border-[#999] flex items-center gap-1 bg-primary-brand ">
+                                        <input
+                                            type="text"
+                                            className="grow text-sm"
+                                            placeholder="Enter your business name "
+                                        />
+                                    </label>
+                                </div>
+                                <div>
+                                    <p>
+                                        <span className=" font-bold">Business Location</span>
+                                    </p>
+                                    <p>
+                                        <span className=" font-bold">Address Line 1 </span>
+                                    </p>
+                                    <label className="input input-bordered border-[#999] flex items-center gap-9 bg-primary-brand ">
+                                        <input
+                                            type="text"
+                                            className="grow text-sm"
+                                            placeholder="12 Adeola Odeku Street, Victoria Island"
+                                        />
+                                    </label>
+                                    <p>
+                                        <span className=" font-bold">Address Line 2 (optional)</span>
+                                    </p>
+                                    <label className="input input-bordered border-[#999] flex items-center gap-9 bg-primary-brand ">
+                                        <input
+                                            type="text"
+                                            className="grow text-sm"
+                                            placeholder="Suite A3, Victoria Island Plaza"
+                                        />
+                                    </label>
+                                </div>
+                                <div>
+                                    <div>
+                                        <span className=" font-bold">Service category</span>
+                                        <select className="select select-bordered w-full max-w-xs bg-primary-brand">
+                                            <option className="bg-white  " disabled selected>
+                                                Select a service you offer
+                                            </option>
+                                            <option className="bg-white">Fashion designer</option>
+                                            <option className="bg-white">Makeup artist</option>
+                                            <option className="bg-white">Hair Stylist</option>
+                                            <option className="bg-white">Barber</option>
+                                            <option className="bg-white">Personal Stylist</option>
+                                            <option className="bg-white">Nail technician</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label className="form-control">
+                                            <div className="label">
+                                                <span className=" font-bold">Service description</span>
+                                            </div>
+                                            <textarea
+                                                className="textarea textarea-bordered bg-primary-brand h-24 text-sm"
+                                                placeholder="Describe your service"
+                                            ></textarea>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <span className=" font-bold">Years of experience</span>
+                                        <label className="input input-bordered border-[#999] flex items-center gap-2 bg-primary-brand ">
+                                            <input
+                                                type="text"
+                                                className="grow text-sm"
+                                                placeholder="2 years"
+                                            />
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* button */}
+                            <div className=" card-actions justify-center py-2">
+                                <Link to={"/ExpertUploadPage"}>
+                                    <button className="btn btn-circle btn-sm px-16 btn-neutral">
+                                        Next
+                                    </button>
+                                </Link>
+                            </div>
+                        </form>
 					</div>
 					{/* end of form  */}
 				</div>
