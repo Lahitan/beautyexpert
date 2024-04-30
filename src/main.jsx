@@ -29,6 +29,8 @@ import CustomerBookingJays from "./pages/CustomerPages/CustomerBookingJays.jsx";
 import CustomerDashboard from "./pages/CustomerPages/CustomerDashboard.jsx";
 import EditProfile from "./pages/CustomerPages/EditProfile.jsx";
 import ScheduleAppointment from "./pages/CustomerPages/ScheduleAppointment.jsx";
+import CancelAppointment from "./pages/CustomerPages/CancelAppointment.jsx";
+import ScheduleCancel from "./pages/CustomerPages/ScheduleCancel.jsx";
 
 const router = createBrowserRouter([
 	{
@@ -150,6 +152,16 @@ const router = createBrowserRouter([
 	{
 		path: "/ScheduleAppointment",
 		element: <ScheduleAppointment />,
+		index: true,
+	},
+	{
+		path: "/CancelAppointment",
+		element: <CancelAppointment />,
+		index: true,
+	},
+	{
+		path: "/ScheduleCancel",
+		element: <ScheduleCancel />,
 		index: true,
 	},
 ]);

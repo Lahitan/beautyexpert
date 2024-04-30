@@ -3,6 +3,7 @@ import { IoCheckmarkCircle } from "react-icons/io5";
 import { FaRegCircleXmark } from "react-icons/fa6";
 import { AiOutlineClockCircle } from "react-icons/ai";
 import { LuCalendarDays } from "react-icons/lu";
+import { Link } from "react-router-dom";
 
 const ConfirmedModal = ({ date, time }) => {
 	return (
@@ -53,10 +54,12 @@ const ConfirmedModal = ({ date, time }) => {
 								Reschedule Booking
 							</button>
 						</form>
-						<button className="rounded-lg py-1.5 px-5 bg-[#FF3A29] text-white flex items-center gap-2">
-							{" "}
-							<FaRegCircleXmark /> Cancel Booking
-						</button>
+						<Link to={"/CancelAppointment"}>
+							<button className="rounded-lg py-1.5 px-5 bg-[#FF3A29] text-white flex items-center gap-2">
+								{" "}
+								<FaRegCircleXmark /> Cancel Booking
+							</button>
+						</Link>
 					</div>
 				</div>
 			</div>
