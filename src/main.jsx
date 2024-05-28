@@ -23,9 +23,14 @@ import CustomerServicesFashion from "./pages/CustomerPages/CustomerServicesFashi
 import CustomerBooking from "./pages/CustomerPages/CustomerBooking.jsx";
 import CustomerProduct from "./pages/CustomerPages/CustomerProduct.jsx";
 import CustomerBookingJacky from "./pages/CustomerPages/CustomerBookingJacky.jsx";
-import CustomerBookingJB from "./pages/CustomerPages/CustomerBookingJB.jsx"
-import CustomerBookingJays from "./pages/CustomerPages/CustomerBookingJays.jsx"
+import CustomerBookingJB from "./pages/CustomerPages/CustomerBookingJB.jsx";
+import CustomerBookingJays from "./pages/CustomerPages/CustomerBookingJays.jsx";
 
+import CustomerDashboard from "./pages/CustomerPages/CustomerDashboard.jsx";
+import EditProfile from "./pages/CustomerPages/EditProfile.jsx";
+import ScheduleAppointment from "./pages/CustomerPages/ScheduleAppointment.jsx";
+import CancelAppointment from "./pages/CustomerPages/CancelAppointment.jsx";
+import ScheduleCancel from "./pages/CustomerPages/ScheduleCancel.jsx";
 
 const router = createBrowserRouter([
 	{
@@ -85,8 +90,8 @@ const router = createBrowserRouter([
 	},
 	{
 		path: "/CustomerServices",
-		element: <CustomerServices/>,
-	},	
+		element: <CustomerServices />,
+	},
 	{
 		path: "/CustomerServicesBarber",
 		element: <CustomerServicesBarber />,
@@ -127,7 +132,38 @@ const router = createBrowserRouter([
 		path: "/CustomerBookingJays",
 		element: <CustomerBookingJays />,
 	},
-	
+
+	{
+		path: "CustomerDashboard",
+		element: <CustomerDashboard />,
+		children: [
+			{
+				path: "CustomerProfile",
+				element: <EditProfile />,
+				index: true,
+			},
+			{
+				path: "CustomerProfile",
+				element: <EditProfile />,
+				index: true,
+			},
+		],
+	},
+	{
+		path: "/ScheduleAppointment",
+		element: <ScheduleAppointment />,
+		index: true,
+	},
+	{
+		path: "/CancelAppointment",
+		element: <CancelAppointment />,
+		index: true,
+	},
+	{
+		path: "/ScheduleCancel",
+		element: <ScheduleCancel />,
+		index: true,
+	},
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

@@ -11,9 +11,10 @@ export default {
 				"primary-brand": "#F3D6E0",
 				"secondary-brand": "#12522D",
 				"tertiary-brand": "#001F3F",
-				"divider": "#12522D",
-				"accent": "#9CA3AF",
+				divider: "#12522D",
+				accent: "#9CA3AF",
 				success: "#ED4B9E",
+				"input-color": "#0FA958",
 			},
 			backgroundImage: {
 				"landing-page": "url('./assets/landing-page.png')",

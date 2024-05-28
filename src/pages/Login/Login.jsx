@@ -1,12 +1,30 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { Outlet } from "react-router";
+import { auth } from "../../../firebase";
+import { signInWithEmailAndPassword } from "firebase/auth";
 import facebook from "../../assets/facebook.png";
 import google from "../../assets/google.png";
 import apple from "../../assets/apple.png";
 import eye from "../../assets/eye-logo.png";
 
 const Login = () => {
+	const navigate = useNavigate();
+	const [email, setEmail] = useState("");
+	const [password, setPassword] = useState("");
+	const [notice, setNotice] = useState("");
+
+	const loginWithUsernameAndPassword = async (e) => {
+		e.preventDefault();
+
+		try {
+			await signInWithEmailAndPassword(auth, email, password);
+			navigate("/CustomerHomepage");
+		} catch {
+			setNotice("You entered a wrong username or password.");
+		}
+	};
+
 	return (
 		<div className="bg-primary-brand flex flex-col min-h-screen justify-center items-center">
 			<div className=" w-[22.5rem] lg:w-[35.18rem] ">
@@ -26,14 +44,22 @@ const Login = () => {
 				<div>
 					<label className="input input-bordered flex items-center gap-9 bg-primary-brand mb-[1rem]">
 						<input
-							type="text"
+							type="email"
+							value={email}
 							className="grow"
+							onChange={(e) => setEmail(e.target.value)}
 							placeholder="Enter your email address"
 						/>
 					</label>
 
 					<label className="input input-bordered flex items-center gap-9 bg-primary-brand mb-[1rem]">
-						<input type="text" className="grow" placeholder="Password" />
+						<input
+							type="text"
+							className="grow"
+							placeholder="Password"
+							value={password}
+							onChange={(e) => setPassword(e.target.value)}
+						/>
 						<img src={eye} alt="" />
 					</label>
 					<div className="flex justify-end mb-4 font-semibold  w-[22.5rem] lg:w-[35.18rem]">
@@ -41,8 +67,11 @@ const Login = () => {
 					</div>
 
 					<div className=" card-actions justify-center">
-						<Link to={"/CustomerHomepage"}>
-							<button className=" bg-tertiary-brand btn btn-circle btn-sm px-24 btn-neutral w-[3rem]">
+						<Link to={""}>
+							<button
+								className=" bg-tertiary-brand btn btn-circle btn-sm px-24 btn-neutral w-[3rem]"
+								onClick={(e) => loginWithUsernameAndPassword(e)}
+							>
 								Login
 							</button>
 						</Link>
@@ -72,7 +101,7 @@ const Login = () => {
 					Service
 				</p>
 			</div>
-			<Outlet />
+			<Link to={"/CustomerDashboard"}>click here</Link>
 		</div>
 	);
 };
